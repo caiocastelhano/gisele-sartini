@@ -1,8 +1,8 @@
-export default function Contact() {
+export default function Contact({ dictionary }) {
   return (
-    <section>
-      <h2>Contato</h2>
-      <p>Informações de contato e redes sociais.</p>
+    <section id="contact">
+      <h2>{dictionary.contact.title}</h2>
+      <p>{dictionary.contact.text}</p>
     </section>
   );
 }

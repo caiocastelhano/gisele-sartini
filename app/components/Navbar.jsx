@@ -1,7 +1,23 @@
-export default function Navbar() {
+import LanguageSwitcher from "./LanguageSwitcher";
+
+export default function Navbar({ lang, dictionary }) {
   return (
-    <nav>
-      <p>Navbar</p>
+    <nav
+      style={{
+        padding: "20px",
+        display: "flex",
+        justifyContent: "space-between",
+      }}
+    >
+      <div>
+        <a href="#bio">{dictionary.navbar.bio}</a> •{" "}
+        <a href="#tools">{dictionary.navbar.tools}</a> •{" "}
+        <a href="#projects">{dictionary.navbar.projects}</a> •{" "}
+        <a href="#brands">{dictionary.navbar.brands}</a> •{" "}
+        <a href="#contact">{dictionary.navbar.contact}</a>
+      </div>
+
+      <LanguageSwitcher currentLang={lang} />
     </nav>
   );
 }

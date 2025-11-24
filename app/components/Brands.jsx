@@ -1,8 +1,8 @@
-export default function Brands() {
+export default function Brands({ dictionary }) {
   return (
-    <section>
-      <h2>Marcas</h2>
-      <p>Marcas e clientes com os quais a Gisele já trabalhou.</p>
+    <section id="brands">
+      <h2>{dictionary.brands.title}</h2>
+      <p>{dictionary.brands.text}</p>
     </section>
   );
 }

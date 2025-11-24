@@ -1,23 +1,15 @@
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Bio from "./components/Bio";
-import Tools from "./components/Tools";
-import Projects from "./components/Projects";
-import Brands from "./components/Brands";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+export const dynamic = "force-dynamic";
 
-export default function Home() {
-  return (
-    <main>
-      <Navbar />
-      <HeroSection />
-      <Bio />
-      <Tools />
-      <Projects />
-      <Brands />
-      <Contact />
-      <Footer />
-    </main>
-  );
+import { cookies } from "next/headers";
+import pt from "./dictionaries/pt";
+import en from "./dictionaries/en";
+import HomeContent from "./components/HomeContent";
+
+export default async function Page() {
+  const cookieStore = await cookies(); // 👈 AQUI ESTÁ O PULO DO GATO
+  const lang = cookieStore.get("lang")?.value === "en" ? "en" : "pt";
+
+  const dictionary = lang === "en" ? en : pt;
+
+  return <HomeContent dictionary={dictionary} lang={lang} />;
 }
