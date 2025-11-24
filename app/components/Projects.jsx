@@ -1,8 +1,8 @@
-export default function Projects() {
+export default function Projects({ dictionary }) {
   return (
-    <section>
-      <h2>Projetos</h2>
-      <p>Galeria dos principais projetos e vídeos realizados.</p>
+    <section id="projects">
+      <h2>{dictionary.projects.title}</h2>
+      <p>{dictionary.projects.text}</p>
     </section>
   );
 }

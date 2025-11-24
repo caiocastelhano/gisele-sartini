@@ -1,8 +1,8 @@
-export default function Bio() {
+export default function Bio({ dictionary }) {
   return (
-    <section>
-      <h2>Bio</h2>
-      <p>Texto de apresentação da Gisele ficará aqui.</p>
+    <section id="bio">
+      <h2>{dictionary.bio.title}</h2>
+      <p>{dictionary.bio.text}</p>
     </section>
   );
 }

@@ -1,9 +1,10 @@
-export default function Footer() {
+export default function Footer({ dictionary }) {
   return (
     <footer>
       <p>
-        © {new Date().getFullYear()} Gisele Sartini — Todos os direitos reservados.{" "}
-        Desenvolvido por{" "}
+        © {new Date().getFullYear()} Gisele Sartini —{" "}
+        {dictionary.footer.rights}{" "}
+        {dictionary.footer.developed}{" "}
         <a
           href="https://caiocastelhano.com.br"
           target="_blank"
