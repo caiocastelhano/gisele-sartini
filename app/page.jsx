@@ -1,20 +1,23 @@
-import Image from "next/image";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Bio from "./components/Bio";
+import Tools from "./components/Tools";
+import Projects from "./components/Projects";
+import Brands from "./components/Brands";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col gap-6 items-center justify-center text-center px-6 bg-white">
-      <h1 className="text-3xl font-semibold max-w-lg leading-relaxed">
-        Aqui, muito em breve, estará o portfólio de Gisele Sartini.
-      </h1>
-
-      <Image
-        src="/images/gisele.jpg"
-        alt="Foto de Gisele Sartini"
-        width={280}
-        height={280}
-        className="rounded-full object-cover shadow-md"
-        priority
-      />
+    <main>
+      <Navbar />
+      <HeroSection />
+      <Bio />
+      <Tools />
+      <Projects />
+      <Brands />
+      <Contact />
+      <Footer />
     </main>
   );
 }
