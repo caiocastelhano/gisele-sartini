@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag {
+  background: transparent;
+  border: 1px solid transparent;
+
+  padding: 2px 8px;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+  position: relative;
+
+  transition: border-color 0.25s ease, opacity 0.2s ease;
+}
+
+.flag svg {
+  width: 24px;
+  height: 24px;
+  border-radius: 0 !important;
+}
+
+.active {
+  border-color: #000;
+  background-color: #fffae9;
+}
+
+.flag:hover:not(.active) {
+  border-color: #000;
+}
+
+.flag:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
