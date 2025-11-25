@@ -27,19 +27,19 @@
   transition: color 0.2s ease;
 }
 
-
 .rightMenu {
   display: flex;
   align-items: center;
-  gap: 36px; 
-}
+  gap: 36px;
 
+  list-style: none; 
+  margin: 0;        
+  padding: 0;       
+}
 
 .linkWrapper {
   position: relative;
   display: inline-block;
-
-  
   padding: 0 4px;
 }
 
@@ -80,7 +80,8 @@
   background-color: #fcbf49;
 }
 
-.linkWrapper:hover::after {
+.linkWrapper:hover::after,
+.linkWrapper:focus-within::after {
   border-color: #000;
 }
 

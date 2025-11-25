@@ -4,47 +4,72 @@ import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 export default function Navbar({ lang, dictionary }) {
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} aria-label={dictionary.navbar.navLabel}>
       
-      <Link href="/" className={styles.name}>
+      <Link
+        href="/"
+        className={styles.name}
+        aria-label={dictionary.navbar.homeLabel}
+      >
         {dictionary.navbar.name}
       </Link>
 
-      <div className={styles.rightMenu}>
-        <div className={`${styles.linkWrapper} ${styles.red}`}>
-          <a className={styles.link} href="#bio">
-            {dictionary.navbar.bio}
-          </a>
-        </div>
+      <ul className={styles.rightMenu}>
+        
+        <li>
+          <Link
+            href="#bio"
+            className={`${styles.linkWrapper} ${styles.red}`}
+            aria-label={dictionary.navbar.bioLabel}
+          >
+            <span className={styles.link}>{dictionary.navbar.bio}</span>
+          </Link>
+        </li>
 
-        <div className={`${styles.linkWrapper} ${styles.blue}`}>
-          <a className={styles.link} href="#tools">
-            {dictionary.navbar.tools}
-          </a>
-        </div>
+        <li>
+          <Link
+            href="#tools"
+            className={`${styles.linkWrapper} ${styles.blue}`}
+            aria-label={dictionary.navbar.toolsLabel}
+          >
+            <span className={styles.link}>{dictionary.navbar.tools}</span>
+          </Link>
+        </li>
 
-        <div className={`${styles.linkWrapper} ${styles.yellow}`}>
-          <a className={styles.link} href="#projects">
-            {dictionary.navbar.projects}
-          </a>
-        </div>
+        <li>
+          <Link
+            href="#projects"
+            className={`${styles.linkWrapper} ${styles.yellow}`}
+            aria-label={dictionary.navbar.projectsLabel}
+          >
+            <span className={styles.link}>{dictionary.navbar.projects}</span>
+          </Link>
+        </li>
 
-        <div className={`${styles.linkWrapper} ${styles.blue}`}>
-          <a className={styles.link} href="#brands">
-            {dictionary.navbar.brands}
-          </a>
-        </div>
+        <li>
+          <Link
+            href="#brands"
+            className={`${styles.linkWrapper} ${styles.blue}`}
+            aria-label={dictionary.navbar.brandsLabel}
+          >
+            <span className={styles.link}>{dictionary.navbar.brands}</span>
+          </Link>
+        </li>
 
-        <div className={`${styles.linkWrapper} ${styles.red}`}>
-          <a className={styles.link} href="#contact">
-            {dictionary.navbar.contact}
-          </a>
-        </div>
+        <li>
+          <Link
+            href="#contact"
+            className={`${styles.linkWrapper} ${styles.red}`}
+            aria-label={dictionary.navbar.contactLabel}
+          >
+            <span className={styles.link}>{dictionary.navbar.contact}</span>
+          </Link>
+        </li>
 
-        <div className={styles.languageWrapper}>
+        <li className={styles.languageWrapper}>
           <LanguageSwitcher currentLang={lang} />
-        </div>
-      </div>
+        </li>
+      </ul>
     </nav>
   );
 }
