@@ -16,6 +16,12 @@ export default {
     contactLabel: "Go to Contact section"
   },
 
+  lang: {
+    switchToPT: "Switch to Portuguese",
+    switchToEN: "Switch to English",
+    languageSelectorLabel: "Language selector"
+  },
+
   bio: {
     title: "Bio",
     text: "Gisele's introduction text goes here.",

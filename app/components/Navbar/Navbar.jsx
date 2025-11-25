@@ -67,7 +67,7 @@ export default function Navbar({ lang, dictionary }) {
         </li>
 
         <li className={styles.languageWrapper}>
-          <LanguageSwitcher currentLang={lang} />
+          <LanguageSwitcher currentLang={lang} dictionary={dictionary} />
         </li>
       </ul>
     </nav>
