@@ -2,7 +2,7 @@
 
 import { useTransition } from "react";
 import { useRouter } from "next/navigation";
-import { setLanguage } from "../actions/setLanguage";
+import { setLanguage } from "../../actions/setLanguage";
 
 export default function LanguageSwitcher({ currentLang }) {
   const [isPending, startTransition] = useTransition();

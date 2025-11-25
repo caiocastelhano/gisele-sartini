@@ -1,11 +1,11 @@
 export default {
   navbar: {
     name: "GISELE SARTINI",
-    bio: "About",
-    tools: "Skills",
-    projects: "Projects",
-    brands: "Clients",
-    contact: "Contact",
+    bio: "about",
+    tools: "skills",
+    projects: "projects",
+    brands: "clients",
+    contact: "contact",
   },
 
   bio: {

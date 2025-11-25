@@ -1,11 +1,11 @@
-import Navbar from "./Navbar";
-import HeroSection from "./HeroSection";
-import Bio from "./Bio";
-import Tools from "./Tools";
-import Projects from "./Projects";
-import Brands from "./Brands";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Navbar from "../Navbar/Navbar";
+import HeroSection from "../HeroSection/HeroSection";
+import Bio from "../Bio/Bio";
+import Tools from "../Tools/Tools";
+import Projects from "../Projects/Projects";
+import Brands from "../Brands/Brands";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 export default function HomeContent({ dictionary, lang }) {
   return (
