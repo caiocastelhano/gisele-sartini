@@ -3,6 +3,12 @@ export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Tenor_Sans } from "next/font/google";
+
+const tenor = Tenor_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${tenor.className} antialiased`}>
         {children}
       </body>
     </html>
