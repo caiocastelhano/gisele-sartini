@@ -1,3 +1,4 @@
+import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar({ lang, dictionary }) {
@@ -10,6 +11,7 @@ export default function Navbar({ lang, dictionary }) {
       }}
     >
       <div>
+        <Link href="/">{dictionary.navbar.name}</Link> •{" "}
         <a href="#bio">{dictionary.navbar.bio}</a> •{" "}
         <a href="#tools">{dictionary.navbar.tools}</a> •{" "}
         <a href="#projects">{dictionary.navbar.projects}</a> •{" "}
