@@ -6,6 +6,14 @@ export default {
     projects: "projetos",
     brands: "clientes",
     contact: "contato",
+
+    navLabel: "Menu principal",
+    homeLabel: "Ir para a página inicial",
+    bioLabel: "Ir para a seção Sobre",
+    toolsLabel: "Ir para a seção Habilidades",
+    projectsLabel: "Ir para a seção Projetos",
+    brandsLabel: "Ir para a seção Clientes",
+    contactLabel: "Ir para a seção Contato"
   },
 
   bio: {
