@@ -26,3 +26,31 @@
   outline: 2px solid #000;
   outline-offset: 2px;
 }
+
+/* MOBILE (até 640px)            */
+@media (max-width: 640px) {
+  .footer {
+    padding: 14px 12px;     
+  }
+
+  .text {
+    font-size: 0.75rem;     
+    line-height: 1.3;        
+  }
+
+  .link {
+    border-bottom-width: 1px;
+  }
+}
+
+/* TABLET (641px - 1024px)       */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .footer {
+    padding: 18px 14px;
+  }
+
+  .text {
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+}
