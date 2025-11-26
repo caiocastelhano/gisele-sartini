@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎬 Gisele Sartini – Portfolio Website
 
-## Getting Started
+This is the source code for the official portfolio website of Gisele Sartini — a Brazilian video editor specializing in video editing, motion design, reels, animations, and podcast/videocast production.
 
-First, run the development server:
+🔍 Visit
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 https://gisele-sartini.vercel.app
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧭 Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site is developed as a Next.js single-page application (SPA) and includes:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Home
 
-## Learn More
+The landing page introduces the portfolio and provides access to:
 
-To learn more about Next.js, take a look at the following resources:
+About
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Work / Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Brands
 
-## Deploy on Vercel
+Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Internal Sections
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+About – professional background and bio
+
+Work – selected projects in video, motion, editing, and animation
+
+Brands – companies and collaborators Gisele has worked with
+
+Contact – ways to get in touch for work opportunities
+
+🌐 Features
+
+Bilingual support (Portuguese and English)
+
+Responsive design for desktop, tablet, and mobile
+
+Modular architecture using React components
+
+Language system powered by dictionaries and server actions
+
+Clean, minimal and elegant visual design focused on showcasing work
+
+Deployment with continuous integration on Vercel
+
+🛠️ Technologies Used
+
+Next.js (App Router)
+
+React
+
+CSS Modules
+
+Vercel – production hosting and deployments
+
+📱 Responsiveness
+
+The layout is designed to offer a polished and consistent experience across devices — desktop, tablet, and mobile.
+
+✅ Status
+
+The project is currently under active development.
+The live preview is available here:
+🌐 https://gisele-sartini.vercel.app
+
+👨‍💻 Developer
+
+Developed by Caio Castelhano – full-stack developer based in Brazil.
+For freelance inquiries, collaborations or feedback, feel free to get in touch.
+Portfolio: https://caiocastelhano.com.br
