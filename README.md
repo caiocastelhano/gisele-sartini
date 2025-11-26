@@ -1,73 +1,53 @@
-🎬 Gisele Sartini – Portfolio Website
+# 🎬 Gisele Sartini – Portfolio Website
 
-This is the source code for the official portfolio website of Gisele Sartini — a Brazilian video editor specializing in video editing, motion design, reels, animations, and podcast/videocast production.
+This is the source code for the official portfolio website of Gisele Sartini — a Brazilian video editor specializing in video editing, motion design, animation, reels and podcast/videocast production.
 
-🔍 Visit
+## 🔍 Visit
 
-🌐 https://gisele-sartini.vercel.app
+🌐 [gisele-sartini.vercel.app](gisele-sartini.vercel.app)
 
-🧭 Structure
+## 🧭 Structure
 
 The site is developed as a Next.js single-page application (SPA) and includes:
 
-Home
+Home: introduction to the portfolio with access to:
 
-The landing page introduces the portfolio and provides access to:
-
-About
-
-Work / Projects
-
-Brands
+- About
+- Tools
+- Projects
+- Brands
+- Tools
 
 Contact
 
-Internal Sections
+## 🌐 Features
 
-About – professional background and bio
+- **Multilingual support** (English and Portuguese) 
+- **Responsive design** for all devices
+- **Clean and minimal visual identity**, focused on showcasing audiovisual work
+- **Modular component structure** using React
+- Language system powered by **dictionaries and server actions**
+- **Image optimization** and accessibility improvements 
+- **Continuous deployment** via Vercel
 
-Work – selected projects in video, motion, editing, and animation
+## 🛠️ Technologies Used
 
-Brands – companies and collaborators Gisele has worked with
+- [Next.js](https://nextjs.org/) (App Router)  
+- React  
+- CSS Modules  
+- [Vercel](https://vercel.com/) – production hosting
 
-Contact – ways to get in touch for work opportunities
+## 📱 Responsiveness
 
-🌐 Features
+The layout is designed to provide an **excellent experience on desktop, tablet, and mobile**.
 
-Bilingual support (Portuguese and English)
+## ✅ Status
 
-Responsive design for desktop, tablet, and mobile
+The website is currently **under active development**.
+You can preview the live version here:
+[gisele-sartini.vercel.app](gisele-sartini.vercel.app)
 
-Modular architecture using React components
+## 👨‍💻 Developer
 
-Language system powered by dictionaries and server actions
-
-Clean, minimal and elegant visual design focused on showcasing work
-
-Deployment with continuous integration on Vercel
-
-🛠️ Technologies Used
-
-Next.js (App Router)
-
-React
-
-CSS Modules
-
-Vercel – production hosting and deployments
-
-📱 Responsiveness
-
-The layout is designed to offer a polished and consistent experience across devices — desktop, tablet, and mobile.
-
-✅ Status
-
-The project is currently under active development.
-The live preview is available here:
-🌐 https://gisele-sartini.vercel.app
-
-👨‍💻 Developer
-
-Developed by Caio Castelhano – full-stack developer based in Brazil.
-For freelance inquiries, collaborations or feedback, feel free to get in touch.
-Portfolio: https://caiocastelhano.com.br
+Developed by [Caio Castelhano](https://www.caiocastelhano.com.br/) – full-stack developer based in Brazil.  
+**For freelance inquiries, collaborations, or feedback, feel free to get in touch**.
