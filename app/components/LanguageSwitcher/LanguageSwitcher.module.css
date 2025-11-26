@@ -41,3 +41,15 @@
   outline: 2px solid #000;
   outline-offset: 2px;
 }
+
+/* MOBILE (até 768px)            */
+@media (max-width: 768px) {
+  .flag {
+    padding: 4px 6px;
+  }
+
+  .flag svg {
+    width: 20px;
+    height: 20px;
+  }
+}

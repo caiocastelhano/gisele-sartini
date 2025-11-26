@@ -1,11 +1,39 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
+import { useState, useRef, useEffect } from "react";
 
 export default function Navbar({ lang, dictionary }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <nav className={styles.navbar} aria-label={dictionary.navbar.navLabel}>
-      
+
       <Link
         href="/"
         className={styles.name}
@@ -14,7 +42,7 @@ export default function Navbar({ lang, dictionary }) {
         {dictionary.navbar.name}
       </Link>
 
-      <ul className={styles.rightMenu}>
+      <ul ref={menuRef} className={`${styles.rightMenu} ${isOpen ? styles.menuOpen : ""}`}>
         
         <li>
           <Link
@@ -70,6 +98,15 @@ export default function Navbar({ lang, dictionary }) {
           <LanguageSwitcher currentLang={lang} dictionary={dictionary} />
         </li>
       </ul>
+
+      <button
+        ref={buttonRef}
+        className={styles.hamburger}
+        onClick={toggleMenu}
+        aria-label="Menu"
+      >
+        ☰
+      </button>
     </nav>
   );
 }

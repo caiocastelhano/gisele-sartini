@@ -91,3 +91,105 @@
   align-items: center;
   font-size: 0.85rem;
 }
+
+.hamburger {
+  display: none;
+  font-size: 1.9rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 18px;
+  line-height: 1;
+  padding: 2px;
+}
+
+/* MOBILE (até 768px)            */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 18px 20px;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .rightMenu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 22px 20px 28px 20px;
+    background: #FDFBF8;
+    border-bottom: 1px solid #000;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 14px 0;
+    z-index: 40;
+  }
+
+  .menuOpen {
+    display: flex;
+  }
+
+  .rightMenu li:not(.languageWrapper) {
+    flex: 0 0 33.333%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightMenu li:nth-child(5) {
+    flex-basis: 33.333%;
+  }
+
+  .linkWrapper {
+    padding: 2px 6px;
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+
+  .linkWrapper::after {
+    border-width: 1px;
+    left: -5%;
+    width: 110%;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+  }
+
+ .languageWrapper {
+    flex-basis: 100% !important; 
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+
+/* TABLET (769px - 1024px)       */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 20px 28px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .rightMenu {
+    display: flex;
+    gap: 28px;
+  }
+
+  .name {
+    font-size: 1.4rem;
+    letter-spacing: 6px;
+  }
+}
