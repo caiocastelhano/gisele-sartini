@@ -50,5 +50,6 @@ export default {
   footer: {
     rights: "Todos os direitos reservados.",
     developed: "Desenvolvido por",
+    ariaDevLabel: "Site do desenvolvedor Caio Castelhano"
   },
 };
