@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./Bio.module.css";
 
 export default function Bio({ dictionary, lang }) {
@@ -15,20 +14,28 @@ export default function Bio({ dictionary, lang }) {
       : "Download résumé PDF";
 
   return (
-    <section id="about" className={styles.bioSection} role="region" aria-labelledby="about-heading">
+    <section
+      id="about"
+      className={styles.bioSection}
+      role="region"
+      aria-labelledby="about-heading"
+    >
       <div className={styles.bioContainer}>
-        <div className={styles.imageWrapper}>
-          <Image
-            src="/images/profile-image.jpg"
-            alt={bio.alt}
-            width={400}
-            height={400}
-            loading="lazy"
-            className={styles.image}
-          />
+
+        <div className={styles.leftColumn}>
+          <div className={styles.photo} aria-hidden="true"></div>
+
+          <a
+            href={cvFile}
+            download
+            className={styles.cvButton}
+            aria-label={cvAriaLabel}
+          >
+            {cv.download}
+          </a>
         </div>
 
-        <div className={styles.content}>
+        <div className={styles.rightColumn}>
           <h2 id="about-heading" className={styles.visuallyHidden}>
             {bio.title}
           </h2>
@@ -40,11 +47,8 @@ export default function Bio({ dictionary, lang }) {
               dangerouslySetInnerHTML={{ __html: paragraph }}
             />
           ))}
-
-          <a href={cvFile} download className={styles.cvButton} aria-label={cvAriaLabel}>
-            {cv.download}
-          </a>
         </div>
+
       </div>
     </section>
   );
