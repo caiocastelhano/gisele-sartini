@@ -42,6 +42,21 @@ export default {
   tools: {
     title: "Tools",
     text: "List of tools used by Gisele.",
+    ariaLabel: "Tools and software used by Gisele",
+
+    list: [
+      { src: "/logos/premiere.svg", alt: "Adobe Premiere logo" },
+      { src: "/logos/photoshop.svg", alt: "Adobe Photoshop logo" },
+      { src: "/logos/aftereffects.svg", alt: "Adobe After Effects logo" },
+      { src: "/logos/animate.svg", alt: "Adobe Animate logo" },
+      { src: "/logos/illustrator.svg", alt: "Adobe Illustrator logo" },
+      { src: "/logos/audition.svg", alt: "Adobe Audition logo" },
+      { src: "/logos/capcut.svg", alt: "CapCut logo" },
+      { src: "/logos/avid.svg", alt: "Avid logo" },
+      { src: "/logos/vmix.svg", alt: "vMix logo" },
+      { src: "/logos/streamyard.svg", alt: "StreamYard logo" },
+      { src: "/logos/midjourney.svg", alt: "Midjourney logo" }
+    ]
   },
 
   projects: {
