@@ -1,12 +1,24 @@
 .bioSection {
   padding: 80px 16px;
   background-color: #fdfbf8;
+  position: relative;
+  overflow: hidden;
+}
+
+.bioSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.04) 1px,
     transparent 1px
   );
   background-size: 100% 50px;
+
+  pointer-events: none;
+  z-index: 0;
 }
 
 .bioContainer {
@@ -15,6 +27,8 @@
   display: flex;
   align-items: flex-start;
   gap: 48px;
+  position: relative;
+  z-index: 1;
 }
 
 .imageWrapper {
@@ -26,6 +40,7 @@
     12px 12px 0 #2E6DB4,
     18px 18px 0 #fcbf49;
   animation: floatShadow 12s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .image {
@@ -112,6 +127,13 @@
   }
   100% {
     transform: translate(3px, -2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageWrapper {
+    animation: none !important;
+    transform: none !important;
   }
 }
 
