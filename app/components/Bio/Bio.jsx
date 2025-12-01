@@ -9,8 +9,13 @@ export default function Bio({ dictionary, lang }) {
       ? "/cv-file/CV-PT.pdf"
       : "/cv-file/CV-ENG.pdf";
 
+  const cvAriaLabel =
+    lang === "pt"
+      ? "Baixar currículo em PDF"
+      : "Download résumé PDF";
+
   return (
-    <section id="about" className={styles.bioSection}>
+    <section id="about" className={styles.bioSection} role="region" aria-labelledby="about-heading">
       <div className={styles.bioContainer}>
         <div className={styles.imageWrapper}>
           <Image
@@ -18,13 +23,15 @@ export default function Bio({ dictionary, lang }) {
             alt={bio.alt}
             width={400}
             height={400}
-            priority
+            loading="lazy"
             className={styles.image}
           />
         </div>
 
         <div className={styles.content}>
-          <h2 className={styles.visuallyHidden}>{bio.title}</h2>
+          <h2 id="about-heading" className={styles.visuallyHidden}>
+            {bio.title}
+          </h2>
 
           {bio.paragraphs.map((paragraph, index) => (
             <p
@@ -34,7 +41,7 @@ export default function Bio({ dictionary, lang }) {
             />
           ))}
 
-          <a href={cvFile} download className={styles.cvButton}>
+          <a href={cvFile} download className={styles.cvButton} aria-label={cvAriaLabel}>
             {cv.download}
           </a>
         </div>
