@@ -70,8 +70,16 @@ export default {
   },
 
   contact: {
-    title: "Contato",
-    text: "Informações de contato e redes sociais.",
+    title: "Fale comigo",
+    description: "Estou aberta a novos projetos, parcerias e oportunidades criativas. Se quiser conversar sobre trabalho, ideias ou colaborações, será um prazer te ouvir.",
+    emailCta: "Enviar e-mail",
+    linkedinCta: "LinkedIn",
+    whatsappCta: "WhatsApp",
+    links: {
+      email: "giselesartini@gmail.com",
+      linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/",
+      whatsapp: "https://wa.me/5511954768053"
+    }
   },
 
   footer: {
