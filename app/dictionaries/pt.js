@@ -41,21 +41,21 @@ export default {
 
   tools: {
     title: "Ferramentas",
-    ariaLabel: "Ferramentas e softwares utilizados pela Gisele",
+    ariaLabel: "Lista de ferramentas e softwares dominados pela Gisele",
     helperText: "Ferramentas que domino",
 
     list: [
-      { src: "/logos/premiere.svg", alt: "Logo Adobe Premiere", label: "Premiere" },
-      { src: "/logos/photoshop.svg", alt: "Logo Adobe Photoshop", label: "Photoshop" },
-      { src: "/logos/after.svg", alt: "Logo Adobe After Effects", label: "After Effects" },
-      { src: "/logos/animate.svg", alt: "Logo Adobe Animate", label: "Animate" },
-      { src: "/logos/illustrator.svg", alt: "Logo Adobe Illustrator", label: "Illustrator" },
-      { src: "/logos/audition.svg", alt: "Logo Adobe Audition", label: "Audition" },
-      { src: "/logos/capcut.svg", alt: "Logo CapCut", label: "CapCut" },
-      { src: "/logos/avid.svg", alt: "Logo Avid", label: "Avid" },
-      { src: "/logos/vmix.svg", alt: "Logo vMix", label: "vMix" },
-      { src: "/logos/streamyard.svg", alt: "Logo StreamYard", label: "StreamYard" },
-      { src: "/logos/midjourney.svg", alt: "Logo Midjourney", label: "Midjourney" }
+      { src: "/logos/premiere.svg", alt: "Adobe Premiere", label: "Premiere" },
+      { src: "/logos/photoshop.svg", alt: "Adobe Photoshop", label: "Photoshop" },
+      { src: "/logos/after.svg", alt: "Adobe After Effects", label: "After Effects" },
+      { src: "/logos/animate.svg", alt: "Adobe Animate", label: "Animate" },
+      { src: "/logos/illustrator.svg", alt: "Adobe Illustrator", label: "Illustrator" },
+      { src: "/logos/audition.svg", alt: "Adobe Audition", label: "Audition" },
+      { src: "/logos/capcut.svg", alt: "CapCut", label: "CapCut" },
+      { src: "/logos/avid.svg", alt: "Avid", label: "Avid" },
+      { src: "/logos/vmix.svg", alt: "vMix", label: "vMix" },
+      { src: "/logos/streamyard.svg", alt: "StreamYard", label: "StreamYard" },
+      { src: "/logos/midjourney.svg", alt: "Midjourney", label: "Midjourney" }
     ]
   },
 
