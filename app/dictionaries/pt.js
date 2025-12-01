@@ -27,12 +27,16 @@ export default {
     alt: "Retrato de Gisele Sartini",
     paragraphs: [
       "Olá, muito prazer em te ver por aqui!",
-      "Meu nome é Gisele Sartini, sou uma profissional multimídia com paixão por contar histórias através do audiovisual. Sou formada em Jornalismo pela faculdade Cásper Líbero com especialização técnica em Cinema, criando uma base sólida para atuar de forma estratégica e criativa.",
-      "Minha experiência abrange toda a cadeia de produção audiovisual: da concepção de roteiros à edição de vídeo, motion design, operação de livestreams (VMix/Streamyard) e produção. Na TV Gazeta, atuo como Videomaker, roteirista e operadora de lives, produzindo conteúdo para as redes sociais da Fundação Cásper Líbero. Anteriormente, colaborei com empresas como Empiricus, Jellysmack e o portal Mina Bem-Estar, editando vídeos com foco em engajamento, vendas e crescimento de audiência em plataformas como YouTube e redes sociais.",
-      "Também direcionei minha criatividade para projetos autorais, tendo produzido e editado o documentário \"Entre Latas e Luta\" e participado de diversos curtas-metragens em funções como direção de arte, roteiro e finalização.",
-      "Domino o Pacote Adobe Avançado (Premiere, After Effects, Photoshop, Audition) e ferramentas como OBS, Avid e Midjourney. Sou fluente em inglês, tenho espanhol avançado e conhecimentos intermediários de italiano, o que me permite colaborar em projetos internacionais.",
-      "Estou sempre em busca de novos desafios para criar conteúdos visuais inovadores e impactantes."
+      "Meu nome é <strong>Gisele Sartini</strong>, sou uma <strong>profissional multimídia com paixão por contar histórias através do audiovisual</strong>. Sou formada em Jornalismo pela faculdade Cásper Líbero com especialização técnica em Cinema, criando uma base sólida para atuar de forma estratégica e criativa.",
+      "Minha experiência abrange toda a cadeia de produção audiovisual: <strong>da concepção de roteiros à edição de vídeo, motion design, operação de livestreams (VMix/Streamyard) e produção</strong>. Na TV Gazeta, atuo como Videomaker, roteirista e operadora de lives, produzindo conteúdo para as redes sociais da <strong>Fundação Cásper Líbero</strong>. Anteriormente, colaborei com empresas como <strong>Empiricus, Jellysmack e o portal Mina Bem-Estar</strong>, editando vídeos com foco em engajamento, vendas e crescimento de audiência em plataformas como YouTube e redes sociais.",
+      "Também direcionei minha criatividade para projetos autorais, tendo produzido e editado o documentário <em>\"Entre Latas e Luta\"</em> e participado de diversos curtas-metragens em funções como <strong>direção de arte, roteiro e finalização.</strong>",
+      "Domino o <strong>Pacote Adobe Avançado (Premiere, After Effects, Photoshop, Audition) e ferramentas como OBS, Avid e Midjourney</strong>. Sou fluente em inglês, tenho espanhol avançado e conhecimentos intermediários de italiano, o que me permite colaborar em projetos internacionais.",
+      "Estou sempre em busca de novos desafios para criar <strong>conteúdos visuais inovadores e impactantes.</strong>"
     ]
+  },
+
+  cv: {
+    download: "Currículo | PDF"
   },
 
   tools: {
