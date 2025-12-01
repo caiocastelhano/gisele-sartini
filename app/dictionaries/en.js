@@ -70,8 +70,16 @@ export default {
   },
 
   contact: {
-    title: "Contact",
-    text: "Contact information and social media.",
+    title: "Get in touch",
+    description: "I'm open to new projects, collaborations and creative opportunities. If you'd like to talk about work, ideas, or partnerships, I'd love to hear from you.",
+    emailCta: "Send email",
+    linkedinCta: "LinkedIn",
+    whatsappCta: "WhatsApp",
+    links: {
+      email: "giselesartini@gmail.com",
+      linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/",
+      whatsapp: "https://wa.me/5511954768053"
+    }
   },
 
   footer: {
