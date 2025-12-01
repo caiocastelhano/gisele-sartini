@@ -12,7 +12,7 @@ export default function HomeContent({ dictionary, lang }) {
     <>
       <Navbar lang={lang} dictionary={dictionary} />
       <HeroSection dictionary={dictionary} />
-      <Bio dictionary={dictionary} />
+      <Bio dictionary={dictionary} lang={lang} />
       <Tools dictionary={dictionary} />
       <Projects dictionary={dictionary} />
       <Brands dictionary={dictionary} />

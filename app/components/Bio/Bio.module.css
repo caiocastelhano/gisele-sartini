@@ -1,0 +1,119 @@
+.bioSection {
+  padding: 80px 16px;
+  background-color: #fdfbf8;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 100% 50px;
+}
+
+.bioContainer {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.imageWrapper {
+  flex: 1;
+  max-width: 380px;
+  position: relative;
+  box-shadow:
+    6px 6px 0 #E55347,
+    12px 12px 0 #2E6DB4,
+    18px 18px 0 #fcbf49;
+  animation: floatShadow 12s ease-in-out infinite alternate;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #000;
+}
+
+.content {
+  flex: 2;
+  max-width: 620px;
+}
+
+.title {
+  margin: 0 0 24px;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.paragraph {
+  margin: 0 0 16px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #111;
+}
+
+.visuallyHidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.cvButton {
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 24px;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: #000;
+  background-color: #fcbf49;
+  border: 1px solid #000;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: transform 0.25s ease, background-color 0.25s ease;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cvButton:hover,
+.cvButton:focus-visible {
+  background-color: #E55347;
+  transform: translateY(-3px);
+}
+
+@keyframes floatShadow {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(3px, -2px);
+  }
+}
+
+
+
