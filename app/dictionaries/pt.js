@@ -71,8 +71,11 @@ export default {
 
   contact: {
     title: "Fale comigo",
-    description: "Estou aberta a novos projetos, parcerias e oportunidades criativas. Se quiser conversar sobre trabalho, ideias ou colaborações, será um prazer te ouvir.",
-    emailCta: "Enviar e-mail",
+    description: [
+      "Estou aberta a novos projetos, parcerias e oportunidades criativas.",
+      "Se quiser conversar sobre trabalho, ideias ou colaborações, será um prazer te ouvir."
+    ],
+    emailCta: "E-mail",
     linkedinCta: "LinkedIn",
     whatsappCta: "WhatsApp",
     links: {

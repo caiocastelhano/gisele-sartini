@@ -71,8 +71,11 @@ export default {
 
   contact: {
     title: "Get in touch",
-    description: "I'm open to new projects, collaborations and creative opportunities. If you'd like to talk about work, ideas, or partnerships, I'd love to hear from you.",
-    emailCta: "Send email",
+    description: [
+      "I'm open to new projects, collaborations and creative opportunities.",
+      "If you'd like to talk about work, ideas, or partnerships, I'd love to hear from you."
+    ],
+    emailCta: "Email",
     linkedinCta: "LinkedIn",
     whatsappCta: "WhatsApp",
     links: {
