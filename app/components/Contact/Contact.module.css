@@ -94,7 +94,7 @@
 
 .button:hover,
 .button:focus-visible {
-  background: #E55347;
+  background: #2E6DB4;
   transform: translateY(-4px);
 }
 

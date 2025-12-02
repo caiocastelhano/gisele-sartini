@@ -69,6 +69,7 @@ export default {
     ariaLabels: {
       sectionLabel: "Clients logos section"
     },
+    description: "Companies I’ve collaborated with",
     items: [
       {
         image: "/clients/casper.png",
