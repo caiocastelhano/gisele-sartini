@@ -82,7 +82,13 @@ export default {
       email: "giselesartini@gmail.com",
       linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/",
       whatsapp: "https://wa.me/5511954768053"
-    }
+    },
+    ariaLabels: {
+      sectionLabel: "Seção de contato",
+      email: "Enviar email para Gisele Sartini",
+      linkedin: "Abrir perfil no LinkedIn em nova aba",
+      whatsapp: "Enviar mensagem pelo WhatsApp em nova aba"
+    },
   },
 
   footer: {
