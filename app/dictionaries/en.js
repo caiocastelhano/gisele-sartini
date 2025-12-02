@@ -61,7 +61,58 @@ export default {
 
   projects: {
     title: "Projects",
-    text: "Gallery of Gisele's main video projects.",
+    seeAllText: "See all",
+    ariaLabels: {
+      sectionLabel: "Projects video section",
+      seeAllButton: "Go to the page with all projects",
+    },
+    items: [
+      {
+        src: "https://www.youtube.com/embed/XTXKzDz3Tb0",
+        title: "Chocolate Cake by Chef Patrícia Figueiredo | TV Gazeta",
+        caption: "Chocolate Cake by Chef Patrícia Figueiredo | TV Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/tD3FTAZ8was",
+        title: "SÃO SILVESTRE: Exclusive interview with Paul Tergat, the race's greatest champion",
+        caption: "SÃO SILVESTRE: Exclusive interview with Paul Tergat, the race's greatest champion"
+      },
+      {
+        src: "https://www.youtube.com/embed/iLvTiLUdUp4",
+        title: "PRE-GAME: Corinthians vs Palmeiras - Brazilian Cup + DANIEL FURLAN LIVE | #TáNoJogo #80",
+        caption: "PRE-GAME: Corinthians vs Palmeiras - Brazilian Cup + DANIEL FURLAN LIVE | #TáNoJogo #80"
+      },
+      {
+        src: "https://www.youtube.com/embed/ZRl07ekvBko",
+        title: "PÉRICLES - Exclusive Interview | Gazeta FM",
+        caption: "PÉRICLES - Exclusive Interview | Gazeta FM"
+      },
+      {
+        src: "https://www.youtube.com/embed/F1IMKT-lVOM",
+        title: "Pauta & Prosa #24: Spirituality in the Digital Age | Jornal da Gazeta",
+        caption: "Pauta & Prosa #24: Spirituality in the Digital Age | Jornal da Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/DhF7f-kgS7c",
+        title: "It may not look like it, but it's WORK: Carnival & Entertainment Journalism | Central 900 - Ep. 2",
+        caption: "It may not look like it, but it's WORK: Carnival & Entertainment Journalism | Central 900 - Ep. 2"
+      },
+      {
+        src: "https://www.youtube.com/embed/-dfpISBxUww",
+        title: "ITUB4 reports record results, IGTI11 surprises, and ROXO34 rises — buy or sell? | Money Times",
+        caption: "ITUB4 reports record results, IGTI11 surprises, and ROXO34 rises — buy or sell? | Money Times"
+      },
+      {
+        src: "https://www.youtube.com/embed/7Ke3ZIy5EAE",
+        title: "Stop talking to your mother | Mina Bem-estar",
+        caption: "Stop talking to your mother | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/n3jtNVomhDE",
+        title: "VLOG Crica + Banco Pan",
+        caption: "VLOG Crica + Banco Pan"
+      },
+    ]
   },
 
   clients: {
