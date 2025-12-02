@@ -208,19 +208,18 @@
 
   .buttonsWrapper {
     display: flex;
-    flex-direction: row;  /* agora lado a lado */
+    flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
   }
 
   .button {
-    padding: 12px 20px;   /* menor para caber melhor */
+    padding: 12px 20px;   
     font-size: 0.9rem;
-    white-space: nowrap;  /* evita quebra feia */
+    white-space: nowrap;  
   }
 
-  /* remove linhas de divisão no mobile */
   .verticalLine,
   .horizontalLine {
     display: none;

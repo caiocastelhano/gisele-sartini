@@ -64,9 +64,53 @@ export default {
     text: "Galeria dos principais projetos e vídeos realizados.",
   },
 
-  brands: {
-    title: "Marcas",
-    text: "Marcas e clientes com os quais a Gisele já trabalhou.",
+  clients: {
+    title: "Clientes",
+    ariaLabels: {
+      sectionLabel: "Seção com logos de clientes"
+    },
+    items: [
+      {
+        image: "/clients/casper.png",
+        alt: "Logotipo Faculdade Cásper Líbero"
+      },
+      {
+        image: "/clients/empiricus.png",
+        alt: "Logotipo Empiricus"
+      },
+      {
+        image: "/clients/exame.png",
+        alt: "Logotipo Exame"
+      },
+      {
+        image: "/clients/gazeta.png",
+        alt: "Logotipo Gazeta"
+      },
+      {
+        image: "/clients/mina.png",
+        alt: "Logotipo Mina"
+      },
+      {
+        image: "/clients/moneytimes.png",
+        alt: "Logotipo MoneyTimes"
+      },
+      {
+        image: "/clients/saosilvestre.png",
+        alt: "Logotipo São Silvestre"
+      },
+      {
+        image: "/clients/seudinheiro.png",
+        alt: "Logotipo Seu Dinheiro"
+      },
+      {
+        image: "/clients/yubb.png",
+        alt: "Logotipo Yubb"
+      },
+      {
+        image: "/clients/zazo.png",
+        alt: "Logotipo ZAZO Produções"
+      }
+    ]
   },
 
   contact: {
