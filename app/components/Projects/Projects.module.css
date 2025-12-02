@@ -140,3 +140,88 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+/* TABLET (até 1024px)         */
+@media (max-width: 1024px) {
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .projectsSection {
+    padding: 60px 12px;
+  }
+
+  .introWrapper {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .introTitle {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .introText {
+    font-size: 0.95rem;
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid {
+    gap: 32px;
+  }
+
+  .caption {
+    font-size: 0.9rem;
+  }
+}
+
+/* MOBILE (até 600px)         */
+@media (max-width: 600px) {
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .projectsSection {
+    padding: 40px 12px;
+  }
+
+  .introWrapper {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .introTitle {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .introText {
+    font-size: 0.9rem;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .caption {
+    font-size: 0.85rem;
+    max-width: 95%;
+  }
+
+  .buttonWrapper {
+    margin-top: 40px;
+  }
+
+  .seeAllButton {
+    padding: 16px 36px;
+    font-size: 1rem;
+  }
+}
