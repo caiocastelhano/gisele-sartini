@@ -15,19 +15,15 @@ export default function Projects({ dictionary }) {
       <span className={styles.verticalLine} aria-hidden="true"></span>
       <span className={styles.horizontalLine} aria-hidden="true"></span>
 
-      {/* Título acessível */}
-      <h2 id="projects-heading" className="visuallyHidden">
+      <h2 id="projects-heading" className={styles.visuallyHidden}>
         {projects.title}
       </h2>
 
-      {/* ------ NOVO BLOCO (VISUAL TITLE + TEXT) ------ */}
       <div className={styles.introWrapper}>
-        <h3 className={styles.introTitle}>{projects.sectionTitle}</h3>
+        <p className={styles.introTitle}>{projects.sectionTitle}</p>
         <p className={styles.introText}>{projects.sectionDescription}</p>
       </div>
-      {/* ------------------------------------------------ */}
 
-      {/* GRID DE 9 VÍDEOS */}
       <div className={styles.grid}>
         {projects.items.slice(0, 9).map((video, idx) => (
           <div key={idx} className={styles.videoCard}>
@@ -37,7 +33,9 @@ export default function Projects({ dictionary }) {
                 title={video.title}
                 loading="lazy"
                 frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allow="fullscreen; picture-in-picture"
+                referrerPolicy="strict-origin-when-cross-origin"
+                fetchpriority="low"
                 allowFullScreen
               ></iframe>
             </div>
@@ -47,7 +45,6 @@ export default function Projects({ dictionary }) {
         ))}
       </div>
 
-      {/* BOTÃO "VEJA TUDO" */}
       <div className={styles.buttonWrapper}>
         <Link
           href="/projects"
