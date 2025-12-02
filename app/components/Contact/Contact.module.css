@@ -128,3 +128,112 @@
     box-shadow: none !important;
   }
 }
+
+/* TABLET (de 768px até 1024px)            */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    min-height: auto;
+    gap: 40px;
+  }
+
+  .q1,
+  .q2,
+  .q3,
+  .q4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .q2 {
+    padding: 0 20px;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .button {
+    padding: 14px 26px;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    font-size: 1.15rem;
+    max-width: 600px;
+  }
+}
+
+/* MOBILE (até 767px)            */
+@media (max-width: 767px) {
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    min-height: auto;
+    gap: 32px;
+  }
+
+  .q1,
+  .q2,
+  .q3,
+  .q4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .q2 {
+    padding: 0;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    flex-direction: row;  /* agora lado a lado */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .button {
+    padding: 12px 20px;   /* menor para caber melhor */
+    font-size: 0.9rem;
+    white-space: nowrap;  /* evita quebra feia */
+  }
+
+  /* remove linhas de divisão no mobile */
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.05rem;
+    max-width: 100%;
+    line-height: 1.6;
+  }
+}
+
