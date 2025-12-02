@@ -28,11 +28,16 @@ export default function Clients({ dictionary }) {
               alt={client.alt}
               className={styles.logo}
               loading="lazy"
+              decoding="async"
             />
           </div>
         ))}
 
-        <div className={`${styles.clientCard} ${styles.emptyCard}`}></div>
+        <div
+          className={styles.emptyCard}
+          aria-hidden="true"
+          role="presentation"
+        ></div>
       </div>
     </section>
   );

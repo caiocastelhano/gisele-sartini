@@ -1,12 +1,12 @@
 .clientsSection {
   padding: 60px 16px;
   background-color: #fcbf49;
+  position: relative;
 }
 
 .grid {
   max-width: 1200px;
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -16,17 +16,16 @@
   background-color: #fff;
   border: 1px solid #000;
   padding: 32px;
-
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .clientCard:hover {
   transform: translateY(-6px) scale(1.03);
+  will-change: transform;
 }
 
 .logo {
@@ -39,11 +38,9 @@
 .textCard {
   background-color: #E55347;
   padding: 24px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 1px solid #000;
 }
 
@@ -60,12 +57,14 @@
   background-color: #E55347;
   border: 1px solid #000;
   height: 150px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
+  transform: none !important;
+}
 
-  pointer-events: none; 
+.emptyCard:hover {
   transform: none !important;
 }
 
