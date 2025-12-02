@@ -46,7 +46,7 @@ export default function Navbar({ lang, dictionary }) {
         
         <li>
           <Link
-            href="#bio"
+            href="#about"
             className={`${styles.linkWrapper} ${styles.red}`}
             aria-label={dictionary.navbar.bioLabel}
           >
@@ -76,7 +76,7 @@ export default function Navbar({ lang, dictionary }) {
 
         <li>
           <Link
-            href="#brands"
+            href="#clients"
             className={`${styles.linkWrapper} ${styles.blue}`}
             aria-label={dictionary.navbar.brandsLabel}
           >
