@@ -6,16 +6,21 @@ export default function Clients({ dictionary }) {
   return (
     <section
       id="clients"
-      className={styles.clientsSection}
       aria-labelledby="clients-heading"
+      className={styles.clientsSection}
       role="region"
       aria-label={clients.ariaLabels.sectionLabel}
     >
-      <h2 id="clients-heading" className={styles.title}>
+      <h2 id="clients-heading" className={styles.visuallyHidden}>
         {clients.title}
       </h2>
 
       <div className={styles.grid}>
+
+        <div className={`${styles.clientCard} ${styles.textCard}`}>
+          <p className={styles.text}>{clients.description}</p>
+        </div>
+
         {clients.items.map((client, idx) => (
           <div key={idx} className={styles.clientCard}>
             <img
@@ -26,6 +31,8 @@ export default function Clients({ dictionary }) {
             />
           </div>
         ))}
+
+        <div className={`${styles.clientCard} ${styles.emptyCard}`}></div>
       </div>
     </section>
   );
