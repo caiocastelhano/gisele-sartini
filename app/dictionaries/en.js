@@ -198,4 +198,8 @@ export default {
   hero: {
     sectionLabel: "Presentation video"
   },
+
+  projectsPage: {
+    title: "My projects",
+  }
 };
