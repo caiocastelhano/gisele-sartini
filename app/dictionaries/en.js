@@ -194,4 +194,8 @@ export default {
     developed: "Developed by",
     ariaDevLabel: "Website of the developer Caio Castelhano"
   },
+
+  hero: {
+    sectionLabel: "Presentation video"
+  },
 };
