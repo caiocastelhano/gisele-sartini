@@ -61,7 +61,9 @@ export default {
 
   projects: {
     title: "Projects",
-    seeAllText: "See all",
+    seeAllText: "See more",
+    sectionTitle: "Selected Projects",
+    sectionDescription: "Here you'll find some of the projects that shaped my experience in creation and production: journalistic content, branded videos, interviews, and narratives exploring different forms of storytelling.",
     ariaLabels: {
       sectionLabel: "Projects video section",
       seeAllButton: "Go to the page with all projects",

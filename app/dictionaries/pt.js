@@ -61,7 +61,9 @@ export default {
 
   projects: {
     title: "Projetos",
-    seeAllText: "Veja tudo",
+    seeAllText: "Veja mais",
+    sectionTitle: "Principais Projetos Realizados",
+    sectionDescription: "Aqui você encontra alguns dos projetos que marcaram minha vivência em criação e produção: conteúdos jornalísticos, vídeos de marca, entrevistas e narrativas que exploram diferentes linguagens.",
     ariaLabels: {
       sectionLabel: "Seção de vídeos de projetos",
       seeAllButton: "Ir para página com todos os projetos",

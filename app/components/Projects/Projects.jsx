@@ -12,16 +12,25 @@ export default function Projects({ dictionary }) {
       role="region"
       aria-label={projects.ariaLabels.sectionLabel}
     >
+      <span className={styles.verticalLine} aria-hidden="true"></span>
+      <span className={styles.horizontalLine} aria-hidden="true"></span>
+
       {/* Título acessível */}
       <h2 id="projects-heading" className="visuallyHidden">
         {projects.title}
       </h2>
 
+      {/* ------ NOVO BLOCO (VISUAL TITLE + TEXT) ------ */}
+      <div className={styles.introWrapper}>
+        <h3 className={styles.introTitle}>{projects.sectionTitle}</h3>
+        <p className={styles.introText}>{projects.sectionDescription}</p>
+      </div>
+      {/* ------------------------------------------------ */}
+
       {/* GRID DE 9 VÍDEOS */}
       <div className={styles.grid}>
         {projects.items.slice(0, 9).map((video, idx) => (
           <div key={idx} className={styles.videoCard}>
-
             <div className={styles.videoWrapper}>
               <iframe
                 src={video.src}
