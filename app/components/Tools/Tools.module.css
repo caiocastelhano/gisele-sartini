@@ -29,8 +29,7 @@
   transition: transform 0.25s ease;
 }
 
-.toolCard:hover,
-.toolCardText:hover {
+.toolCard:hover {
   transform: translateY(-6px) scale(1.03);
 }
 
