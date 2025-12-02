@@ -61,7 +61,58 @@ export default {
 
   projects: {
     title: "Projetos",
-    text: "Galeria dos principais projetos e vídeos realizados.",
+    seeAllText: "Veja tudo",
+    ariaLabels: {
+      sectionLabel: "Seção de vídeos de projetos",
+      seeAllButton: "Ir para página com todos os projetos",
+    },
+    items: [
+      {
+        src: "https://www.youtube.com/embed/XTXKzDz3Tb0",
+        title: "Bolo de Chocolate da chef Patrícia Figueiredo l TV Gazeta",
+        caption: "Bolo de Chocolate da chef Patrícia Figueiredo l TV Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/tD3FTAZ8was",
+        title: "SÃO SILVESTRE: entrevista EXCLUSIVA com Paul Tergat, maior campeão da prova",
+        caption: "SÃO SILVESTRE: entrevista EXCLUSIVA com Paul Tergat, maior campeão da prova"
+      },
+      {
+        src: "https://www.youtube.com/embed/iLvTiLUdUp4",
+        title: "PRÉ-JOGO: Corinthians x Palmeiras na Copa do Brasil + DANIEL FURLAN AO VIVO | #TáNoJogo #80",
+        caption: "PRÉ-JOGO: Corinthians x Palmeiras na Copa do Brasil + DANIEL FURLAN AO VIVO | #TáNoJogo #80"
+      },
+      {
+        src: "https://www.youtube.com/embed/ZRl07ekvBko",
+        title: "PÉRICLES - Entrevista Exclusiva | Gazeta FM",
+        caption: "PÉRICLES - Entrevista Exclusiva | Gazeta FM"
+      },
+      {
+        src: "https://www.youtube.com/embed/F1IMKT-lVOM",
+        title: "Pauta e prosa #24: Espiritualidade na era digital | Jornal da Gazeta",
+        caption: "Pauta e prosa #24: Espiritualidade na era digital | Jornal da Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/DhF7f-kgS7c",
+        title: "Pode não parecer, mas é TRABALHO: Carnaval e Jornalismo de Entretenimento | Central 900 - #Ep2",
+        caption: "Pode não parecer, mas é TRABALHO: Carnaval e Jornalismo de Entretenimento | Central 900 - #Ep2"
+      },
+      {
+        src: "https://www.youtube.com/embed/-dfpISBxUww",
+        title: "ITUB4 entrega recorde, IGTI11 surpreende e ROXO34 promete; é hora de comprar ou vender? | Money Times",
+        caption: "ITUB4 entrega recorde, IGTI11 surpreende e ROXO34 promete; é hora de comprar ou vender? | Money Times"
+      },
+      {
+        src: "https://www.youtube.com/embed/7Ke3ZIy5EAE",
+        title: "Para de falar com a sua mãe | Mina Bem-estar",
+        caption: "Para de falar com a sua mãe | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/n3jtNVomhDE",
+        title: "VLOG Crica + Banco Pan",
+        caption: "VLOG Crica + Banco Pan"
+      },
+    ]
   },
 
   clients: {
