@@ -64,9 +64,53 @@ export default {
     text: "Gallery of Gisele's main video projects.",
   },
 
-  brands: {
-    title: "Brands",
-    text: "Brands and clients Gisele has worked with.",
+  clients: {
+    title: "Clients",
+    ariaLabels: {
+      sectionLabel: "Clients logos section"
+    },
+    items: [
+      {
+        image: "/clients/casper.png",
+        alt: "Cásper Líbero College logo"
+      },
+      {
+        image: "/clients/empiricus.png",
+        alt: "Empiricus logo"
+      },
+      {
+        image: "/clients/exame.png",
+        alt: "Exame logo"
+      },
+      {
+        image: "/clients/gazeta.png",
+        alt: "Gazeta logo"
+      },
+      {
+        image: "/clients/mina.png",
+        alt: "Mina logo"
+      },
+      {
+        image: "/clients/moneytimes.png",
+        alt: "MoneyTimes logo"
+      },
+      {
+        image: "/clients/saosilvestre.png",
+        alt: "São Silvestre race logo"
+      },
+      {
+        image: "/clients/seudinheiro.png",
+        alt: "Seu Dinheiro logo"
+      },
+      {
+        image: "/clients/yubb.png",
+        alt: "Yubb logo"
+      },
+      {
+        image: "/clients/zazo.png",
+        alt: "ZAZO Produções logo"
+      }
+    ]
   },
 
   contact: {

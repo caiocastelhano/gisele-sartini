@@ -3,7 +3,7 @@ import HeroSection from "../HeroSection/HeroSection";
 import Bio from "../Bio/Bio";
 import Tools from "../Tools/Tools";
 import Projects from "../Projects/Projects";
-import Brands from "../Brands/Brands";
+import Clients from "../Clients/Clients";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 
@@ -15,7 +15,7 @@ export default function HomeContent({ dictionary, lang }) {
       <Bio dictionary={dictionary} lang={lang} />
       <Tools dictionary={dictionary} />
       <Projects dictionary={dictionary} />
-      <Brands dictionary={dictionary} />
+      <Clients dictionary={dictionary} />
       <Contact dictionary={dictionary} />
       <Footer dictionary={dictionary} />
     </>
