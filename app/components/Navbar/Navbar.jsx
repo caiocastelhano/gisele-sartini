@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar({ lang, dictionary }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,9 @@ export default function Navbar({ lang, dictionary }) {
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -43,56 +47,59 @@ export default function Navbar({ lang, dictionary }) {
       </Link>
 
       <ul ref={menuRef} className={`${styles.rightMenu} ${isOpen ? styles.menuOpen : ""}`}>
-        
-        <li>
-          <Link
-            href="#about"
-            className={`${styles.linkWrapper} ${styles.red}`}
-            aria-label={dictionary.navbar.bioLabel}
-          >
-            <span className={styles.link}>{dictionary.navbar.bio}</span>
-          </Link>
-        </li>
+        {isHome && (
+          <>
+            <li>
+              <Link
+                href="#about"
+                className={`${styles.linkWrapper} ${styles.red}`}
+                aria-label={dictionary.navbar.bioLabel}
+              >
+                <span className={styles.link}>{dictionary.navbar.bio}</span>
+              </Link>
+            </li>
 
-        <li>
-          <Link
-            href="#tools"
-            className={`${styles.linkWrapper} ${styles.blue}`}
-            aria-label={dictionary.navbar.toolsLabel}
-          >
-            <span className={styles.link}>{dictionary.navbar.tools}</span>
-          </Link>
-        </li>
+            <li>
+              <Link
+                href="#tools"
+                className={`${styles.linkWrapper} ${styles.blue}`}
+                aria-label={dictionary.navbar.toolsLabel}
+              >
+                <span className={styles.link}>{dictionary.navbar.tools}</span>
+              </Link>
+            </li>
 
-        <li>
-          <Link
-            href="#projects"
-            className={`${styles.linkWrapper} ${styles.yellow}`}
-            aria-label={dictionary.navbar.projectsLabel}
-          >
-            <span className={styles.link}>{dictionary.navbar.projects}</span>
-          </Link>
-        </li>
+            <li>
+              <Link
+                href="#projects"
+                className={`${styles.linkWrapper} ${styles.yellow}`}
+                aria-label={dictionary.navbar.projectsLabel}
+              >
+                <span className={styles.link}>{dictionary.navbar.projects}</span>
+              </Link>
+            </li>
 
-        <li>
-          <Link
-            href="#clients"
-            className={`${styles.linkWrapper} ${styles.blue}`}
-            aria-label={dictionary.navbar.brandsLabel}
-          >
-            <span className={styles.link}>{dictionary.navbar.brands}</span>
-          </Link>
-        </li>
+            <li>
+              <Link
+                href="#clients"
+                className={`${styles.linkWrapper} ${styles.blue}`}
+                aria-label={dictionary.navbar.brandsLabel}
+              >
+                <span className={styles.link}>{dictionary.navbar.brands}</span>
+              </Link>
+            </li>
 
-        <li>
-          <Link
-            href="#contact"
-            className={`${styles.linkWrapper} ${styles.red}`}
-            aria-label={dictionary.navbar.contactLabel}
-          >
-            <span className={styles.link}>{dictionary.navbar.contact}</span>
-          </Link>
-        </li>
+            <li>
+              <Link
+                href="#contact"
+                className={`${styles.linkWrapper} ${styles.red}`}
+                aria-label={dictionary.navbar.contactLabel}
+              >
+                <span className={styles.link}>{dictionary.navbar.contact}</span>
+              </Link>
+            </li>
+          </>
+        )}
 
         <li className={styles.languageWrapper}>
           <LanguageSwitcher currentLang={lang} dictionary={dictionary} />
