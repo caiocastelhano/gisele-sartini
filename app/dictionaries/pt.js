@@ -201,5 +201,187 @@ export default {
 
   projectsPage: {
     title: "Meus projetos",
+    description: "Aqui você encontra a seleção completa dos meus trabalhos audiovisuais — jornalismo, entrevistas, branded content, lives, documentários e projetos autorais.",
+    ariaLabels: {
+      sectionLabel: "Lista completa de vídeos de projetos",
+    },
+
+    items: [
+      {
+        src: "https://www.youtube.com/embed/XTXKzDz3Tb0",
+        title: "Bolo de Chocolate da chef Patrícia Figueiredo l TV Gazeta",
+        caption: "Bolo de Chocolate da chef Patrícia Figueiredo l TV Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/tD3FTAZ8was",
+        title: "SÃO SILVESTRE: entrevista EXCLUSIVA com Paul Tergat, maior campeão da prova",
+        caption: "SÃO SILVESTRE: entrevista EXCLUSIVA com Paul Tergat, maior campeão da prova"
+      },
+      {
+        src: "https://www.youtube.com/embed/iLvTiLUdUp4",
+        title: "PRÉ-JOGO: Corinthians x Palmeiras na Copa do Brasil + DANIEL FURLAN AO VIVO | #TáNoJogo #80",
+        caption: "PRÉ-JOGO: Corinthians x Palmeiras na Copa do Brasil + DANIEL FURLAN AO VIVO | #TáNoJogo #80"
+      },
+      {
+        src: "https://www.youtube.com/embed/ZRl07ekvBko",
+        title: "PÉRICLES - Entrevista Exclusiva | Gazeta FM",
+        caption: "PÉRICLES - Entrevista Exclusiva | Gazeta FM"
+      },
+      {
+        src: "https://www.youtube.com/embed/F1IMKT-lVOM",
+        title: "Pauta e prosa #24: Espiritualidade na era digital | Jornal da Gazeta",
+        caption: "Pauta e prosa #24: Espiritualidade na era digital | Jornal da Gazeta"
+      },
+      {
+        src: "https://www.youtube.com/embed/DhF7f-kgS7c",
+        title: "Pode não parecer, mas é TRABALHO: Carnaval e Jornalismo de Entretenimento | Central 900 - #Ep2",
+        caption: "Pode não parecer, mas é TRABALHO: Carnaval e Jornalismo de Entretenimento | Central 900 - #Ep2"
+      },
+      {
+        src: "https://www.youtube.com/embed/-dfpISBxUww",
+        title: "ITUB4 entrega recorde, IGTI11 surpreende e ROXO34 promete; é hora de comprar ou vender? | Money Times",
+        caption: "ITUB4 entrega recorde, IGTI11 surpreende e ROXO34 promete; é hora de comprar ou vender? | Money Times"
+      },
+      {
+        src: "https://www.youtube.com/embed/7Ke3ZIy5EAE",
+        title: "Para de falar com a sua mãe | Mina Bem-estar",
+        caption: "Para de falar com a sua mãe | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/n3jtNVomhDE",
+        title: "VLOG Crica + Banco Pan",
+        caption: "VLOG Crica + Banco Pan"
+      },
+      {
+        src: "https://www.youtube.com/embed/T6GsH1hQhRU",
+        title: "CONVIDADO: O Brasil que deu certo + ESTREIA de Ancelotti + INVASÃO no Corinthians | #TáNoJogo #65",
+        caption: "CONVIDADO: O Brasil que deu certo + ESTREIA de Ancelotti + INVASÃO no Corinthians | #TáNoJogo #65"
+      },
+      {
+        src: "https://www.youtube.com/embed/EpAnyncIW3U",
+        title: "GLORIA GROOVE - Entrevista Exclusiva",
+        caption: "GLORIA GROOVE - Entrevista Exclusiva"
+      },
+      {
+        src: "https://www.youtube.com/embed/O_gIYrPSbpg",
+        title: "THIAGUINHO - Entrevista Exclusiva",
+        caption: "THIAGUINHO - Entrevista Exclusiva"
+      },
+      {
+        src: "https://www.youtube.com/embed/xpLYHYKJuwk",
+        title: "DROPS DE ANIS #8 - Leona Cavalli, a arte é o ofício",
+        caption: "DROPS DE ANIS #8 - Leona Cavalli, a arte é o ofício"
+      },
+      {
+        src: "https://www.youtube.com/embed/B27uCsWGtX0",
+        title: "DROPS DE ANIS #4 - Um bate papo com a #atriz Virgínia Cavendishtle",
+        caption: "DROPS DE ANIS #4 - Um bate papo com a #atriz Virgínia Cavendish"
+      },
+      {
+        src: "https://www.youtube.com/embed/3tURaF8PtBU",
+        title: "Corte DROPS DE ANIS #3, com Leonardo Miggiorin",
+        caption: "Corte DROPS DE ANIS #3, com Leonardo Miggiorin"
+      },
+      {
+        src: "https://www.youtube.com/embed/EXi7NwNXrcI",
+        title: "Pauta e Prosa #23: O Tempo e a Felicidade | Mario Sérgio Cortella",
+        caption: "Pauta e Prosa #23: O Tempo e a Felicidade | Mario Sérgio Cortella"
+      },
+      {
+        src: "https://www.youtube.com/embed/Dz010IZ-EEU",
+        title: "O que nos resta? | 1º Bodybuilder Vegan Pro do Mundo",
+        caption: "O que nos resta? | 1º Bodybuilder Vegan Pro do Mundo"
+      },
+      {
+        src: "https://www.youtube.com/embed/XecONcv9Vas",
+        title: "JORNALISTA e INFLUENCIADORA DIGITAL: o melhor (e os desafios) dos dois mundos | Central 900 - #Ep18",
+        caption: "JORNALISTA e INFLUENCIADORA DIGITAL: o melhor (e os desafios) dos dois mundos | Central 900 - #Ep18"
+      },
+      {
+        src: "https://www.youtube.com/embed/ZWRtHH-8crA",
+        title: "Em busca da FAMA: Media Training e Reality Shows | Central 900 - #Ep1",
+        caption: "Em busca da FAMA: Media Training e Reality Shows | Central 900 - #Ep1"
+      },
+      {
+        src: "https://www.youtube.com/embed/zhJi1uWoP_Q",
+        title: "Um ano sem Paulo Gustavo: Angélica conversa com Ingrid Guimarães",
+        caption: "Um ano sem Paulo Gustavo: Angélica conversa com Ingrid Guimarães"
+      },
+      {
+        src: "https://www.youtube.com/embed/XI5_8_NC8TY",
+        title: "Dandara Pagu: É melhor ser casada ou solteira?",
+        caption: "Dandara Pagu: É melhor ser casada ou solteira?"
+      },
+      {
+        src: "https://www.youtube.com/embed/XjDrxgJsoFY?list=PL9i60BZmDe5gHidCN53ThbYSANQsoiaM7",
+        title: "Barbosa: Defendendo um Legado",
+        caption: "Barbosa: Defendendo um Legado"
+      },
+      {
+        src: "https://www.youtube.com/embed/VUQ-Dkyl7Mc",
+        title: "Brexit é bom para o Ibovespa? - Pergunta que eu Respondo",
+        caption: "Brexit é bom para o Ibovespa? - Pergunta que eu Respondo"
+      },
+      {
+        src: "https://www.youtube.com/embed/tpR0yFyZqIc",
+        title: "CICATRIZ (Trailer) | Direção: Rodrigo Ribeiro Vieira",
+        caption: "CICATRIZ (Trailer) | Direção: Rodrigo Ribeiro Vieira"
+      },
+      {
+        src: "https://www.youtube.com/embed/PusxWWw382o",
+        title: "Entre Latas e Luta: a cena das mulheres no graffiti de São Paulo",
+        caption: "Entre Latas e Luta: a cena das mulheres no graffiti de São Paulo"
+      },
+      {
+        src: "https://www.youtube.com/embed/fAM_2hlcO-A",
+        title: "Autocuidado | Mina Bem-estar",
+        caption: "Autocuidado | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/zsWDXBB2lYE",
+        title: "Drinks zero álcool | Mina Bem-estar",
+        caption: "Drinks zero álcool | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/leE3y1SpdpM",
+        title: "Skincare | Mina Bem-estar",
+        caption: "Skincare | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/ZYDBJQrM8Q0",
+        title: "Bliss Bullet | Mina Bem-estar",
+        caption: "Bliss Bullet | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/4PijXKmWy80",
+        title: "De dentro para fora | Mina Bem-estar",
+        caption: "De dentro para fora | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/VLN2x25Goz8",
+        title: "Glow noturno | Mina Bem-estar",
+        caption: "Glow noturno | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/PQs9hbw-Vwk",
+        title: "Rafa Kalimann | Mina Bem-estar",
+        caption: "Rafa Kalimann | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/x0rpdiwe9Iw",
+        title: "S.O.S. TPM | Mina Bem-estar",
+        caption: "S.O.S. TPM | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/XrYxmmzDDmU",
+        title: "Pressão estética no trabalho | Mina Bem-estar",
+        caption: "Pressão estética no trabalho | Mina Bem-estar"
+      },
+      {
+        src: "https://www.youtube.com/embed/hCGz6Bf_gIs",
+        title: "Mina Friday | Mina Bem-estar",
+        caption: "Mina Friday | Mina Bem-estar"
+      },
+    ]
   },
 };
