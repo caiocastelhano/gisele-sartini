@@ -1,7 +1,32 @@
+import { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
 
 export default function Contact({ dictionary }) {
   const { contact } = dictionary;
+
+  const [emailLink, setEmailLink] = useState("");
+
+  useEffect(() => {
+    function getUniversalEmailLink(email) {
+      const userAgent = navigator.userAgent.toLowerCase();
+
+      if (userAgent.includes("outlook") || userAgent.includes("windows nt")) {
+        return `https://outlook.office.com/mail/deeplink/compose?to=${email}`;
+      }
+
+      if (/iphone|ipad|ipod/.test(userAgent)) {
+        return `mailto:${email}`;
+      }
+
+      if (userAgent.includes("android")) {
+        return `mailto:${email}`;
+      }
+
+      return `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+    }
+
+    setEmailLink(getUniversalEmailLink(contact.links.email));
+  }, [contact.links.email]);
 
   return (
     <section
@@ -32,10 +57,11 @@ export default function Contact({ dictionary }) {
         <div className={styles.buttonsWrapper}>
 
           <a
-            href={`mailto:${contact.links.email}`}
+            href={emailLink}
             className={styles.button}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={contact.ariaLabels.email}
-            rel="noopener"
           >
             {contact.emailCta}
           </a>
@@ -60,12 +86,10 @@ export default function Contact({ dictionary }) {
             {contact.whatsappCta}
           </a>
         </div>
-
       </div>
 
       <div className={styles.verticalLine} aria-hidden="true"></div>
       <div className={styles.horizontalLine} aria-hidden="true"></div>
-
     </section>
   );
 }
