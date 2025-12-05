@@ -47,7 +47,7 @@ export default function Projects({ dictionary }) {
 
       <div className={styles.buttonWrapper}>
         <Link
-          href="/projects"
+          href="/portfolio"
           className={styles.seeAllButton}
           aria-label={projects.ariaLabels.seeAllButton}
         >

@@ -200,9 +200,9 @@ export default {
   },
 
   projectsPage: {
-    title: "My Projects",
+    title: "Selected Projects",
     description:
-      "Here you can explore the full selection of my audiovisual work — journalism, interviews, branded content, livestreams, documentaries, and authorial projects.",
+      "Here you can explore my main audiovisual projects: reports, interviews, branded content, livestreams, documentaries, and authorial productions.",
     ariaLabels: {
       sectionLabel: "Complete list of project videos",
     },
@@ -383,6 +383,10 @@ export default {
         title: "Mina Friday | Mina Bem-estar",
         caption: "Mina Friday | Mina Bem-estar"
       },
-    ]
+    ],
+
+    textCard: {
+      title: "Updates on the way. Soon, more videos and projects will be available on this page.",
+    },
   },
 };
