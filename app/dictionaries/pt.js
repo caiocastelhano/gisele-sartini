@@ -201,7 +201,7 @@ export default {
 
   projectsPage: {
     title: "Projetos selecionados",
-    description: "Aqui estão reunidos meus principais projetos audiovisuais: reportagens, entrevistas, branded content, lives, documentários e produções autorais.",
+    description: "Aqui estão reunidos meus principais conteúdos audiovisuais: reportagens, entrevistas, branded content, lives, documentários e produções autorais.",
     ariaLabels: {
       sectionLabel: "Lista completa de vídeos de projetos",
     },
@@ -388,4 +388,9 @@ export default {
       title: "Novidades a caminho. Em breve, mais vídeos e projetos estarão disponíveis nesta página.",
     },
   },
+
+  videoModal: {
+    ariaCloseButton: "Fechar vídeo em tela cheia",
+    fallbackTitle: "Vídeo em destaque"
+  }
 };

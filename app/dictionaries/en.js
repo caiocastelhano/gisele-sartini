@@ -202,7 +202,7 @@ export default {
   projectsPage: {
     title: "Selected Projects",
     description:
-      "Here you can explore my main audiovisual projects: reports, interviews, branded content, livestreams, documentaries, and authorial productions.",
+      "Here you can explore my main audiovisual content: reports, interviews, branded content, livestreams, documentaries, and authorial productions.",
     ariaLabels: {
       sectionLabel: "Complete list of project videos",
     },
@@ -389,4 +389,9 @@ export default {
       title: "Updates on the way. Soon, more videos and projects will be available on this page.",
     },
   },
+
+  videoModal: {
+    ariaCloseButton: "Close full-screen video",
+    fallbackTitle: "Featured video"
+  }
 };
