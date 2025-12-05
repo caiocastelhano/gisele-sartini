@@ -12,18 +12,24 @@ export default function Projects({ dictionary }) {
       role="region"
       aria-label={projects.ariaLabels.sectionLabel}
     >
+      {/* Linhas decorativas */}
       <span className={styles.verticalLine} aria-hidden="true"></span>
       <span className={styles.horizontalLine} aria-hidden="true"></span>
 
+      {/* Heading invisível para acessibilidade */}
       <h2 id="projects-heading" className={styles.visuallyHidden}>
         {projects.title}
       </h2>
 
-      <div className={styles.introWrapper}>
-        <p className={styles.introTitle}>{projects.sectionTitle}</p>
-        <p className={styles.introText}>{projects.sectionDescription}</p>
-      </div>
+      {/* 🔥 FAIXA SEPARADA — igual a ProjectsPage */}
+      <section className={styles.headerBand}>
+        <div className={styles.headerContent}>
+          <p className={styles.introTitle}>{projects.sectionTitle}</p>
+          <p className={styles.introText}>{projects.sectionDescription}</p>
+        </div>
+      </section>
 
+      {/* Conteúdo principal */}
       <div className={styles.grid}>
         {projects.items.slice(0, 9).map((video, idx) => (
           <div key={idx} className={styles.videoCard}>
@@ -37,7 +43,7 @@ export default function Projects({ dictionary }) {
                 referrerPolicy="strict-origin-when-cross-origin"
                 fetchPriority="low"
                 allowFullScreen
-              ></iframe>
+              />
             </div>
 
             <p className={styles.caption}>{video.caption}</p>
