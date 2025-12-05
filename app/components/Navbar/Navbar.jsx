@@ -11,13 +11,14 @@ export default function Navbar({ lang, dictionary }) {
 
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
+  const navRef = useRef(null);
+
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
-
-  const pathname = usePathname();
-  const isHome = pathname === "/";
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -35,9 +36,33 @@ export default function Navbar({ lang, dictionary }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  return (
-    <nav className={styles.navbar} aria-label={dictionary.navbar.navLabel}>
+  const handleAnchorClick = (event, targetId) => {
+    if (!isHome) return;
 
+    event.preventDefault();
+
+    const targetElement = document.querySelector(targetId);
+    if (!targetElement) return;
+
+    const navHeight = navRef.current ? navRef.current.offsetHeight : 0;
+
+    const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementTop - navHeight - 8; 
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+
+    setIsOpen(false); 
+  };
+
+  return (
+    <nav
+      ref={navRef}
+      className={styles.navbar}
+      aria-label={dictionary.navbar.navLabel}
+    >
       <Link
         href="/"
         className={styles.name}
@@ -46,12 +71,16 @@ export default function Navbar({ lang, dictionary }) {
         {dictionary.navbar.name}
       </Link>
 
-      <ul ref={menuRef} className={`${styles.rightMenu} ${isOpen ? styles.menuOpen : ""}`}>
+      <ul
+        ref={menuRef}
+        className={`${styles.rightMenu} ${isOpen ? styles.menuOpen : ""}`}
+      >
         {isHome && (
           <>
             <li>
               <Link
                 href="#about"
+                onClick={(e) => handleAnchorClick(e, "#about")}
                 className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.bioLabel}
               >
@@ -62,6 +91,7 @@ export default function Navbar({ lang, dictionary }) {
             <li>
               <Link
                 href="#tools"
+                onClick={(e) => handleAnchorClick(e, "#tools")}
                 className={`${styles.linkWrapper} ${styles.blue}`}
                 aria-label={dictionary.navbar.toolsLabel}
               >
@@ -72,6 +102,7 @@ export default function Navbar({ lang, dictionary }) {
             <li>
               <Link
                 href="#projects"
+                onClick={(e) => handleAnchorClick(e, "#projects")}
                 className={`${styles.linkWrapper} ${styles.yellow}`}
                 aria-label={dictionary.navbar.projectsLabel}
               >
@@ -82,6 +113,7 @@ export default function Navbar({ lang, dictionary }) {
             <li>
               <Link
                 href="#clients"
+                onClick={(e) => handleAnchorClick(e, "#clients")}
                 className={`${styles.linkWrapper} ${styles.blue}`}
                 aria-label={dictionary.navbar.brandsLabel}
               >
@@ -92,6 +124,7 @@ export default function Navbar({ lang, dictionary }) {
             <li>
               <Link
                 href="#contact"
+                onClick={(e) => handleAnchorClick(e, "#contact")}
                 className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.contactLabel}
               >
