@@ -18,13 +18,14 @@ export default function ProjectsPage({ lang = "pt" }) {
 
       <main
         id="projects-page"
-        role="main"
         aria-labelledby="projects-heading"
         className={styles.pageBackground}
       >
+        {/* Elementos decorativos */}
         <span className={styles.verticalLine} aria-hidden="true"></span>
         <span className={styles.horizontalLine} aria-hidden="true"></span>
 
+        {/* Faixa de Título */}
         <section className={styles.headerBand}>
           <div className={styles.headerContent}>
             <h1 id="projects-heading" className={styles.title}>
@@ -34,6 +35,7 @@ export default function ProjectsPage({ lang = "pt" }) {
           </div>
         </section>
 
+        {/* Conteúdo Principal */}
         <div className={styles.pageContainer}>
           <ProjectsGrid
             items={projectsPage.items}
@@ -42,8 +44,12 @@ export default function ProjectsPage({ lang = "pt" }) {
           />
 
           <div className={styles.buttonWrapper}>
-            <Link href="/" className={styles.backButton}>
-              Voltar
+            <Link
+              href="/"
+              className={styles.backButton}
+              aria-label={projectsPage.backButtonAria}
+            >
+              {projectsPage.backButtonText}
             </Link>
           </div>
         </div>
