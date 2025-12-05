@@ -1,0 +1,141 @@
+.pageBackground {
+  width: 100%;
+  min-height: 100vh;
+  background: #FDFBF8;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.verticalLine {
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 63%;
+  width: 1px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+.horizontalLine {
+  position: absolute;
+  top: 580px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.headerBand {
+  width: 100%;
+  background: #fcbf49;
+  padding: 60px 16px;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #000;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px 24px;
+}
+
+.videoWrapper {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+
+.buttonWrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.backButton {
+  padding: 10px 24px;
+  border: 1px solid #000;
+  background: #E55347;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+
+.backButton:hover {
+  background: #fcbf49;
+  color: #000;
+}
+
+.textCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.textWrapper {
+  aspect-ratio: 16/9;             
+  border: 1px solid #000;
+  background: #2E6DB4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 24px;
+}
+
+.textCardParagraph {
+  margin-top: 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.textCardTitle {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+

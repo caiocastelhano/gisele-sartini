@@ -200,8 +200,8 @@ export default {
   },
 
   projectsPage: {
-    title: "Meus projetos",
-    description: "Aqui você encontra a seleção completa dos meus trabalhos audiovisuais — jornalismo, entrevistas, branded content, lives, documentários e projetos autorais.",
+    title: "Projetos selecionados",
+    description: "Aqui estão reunidos meus principais projetos audiovisuais: reportagens, entrevistas, branded content, lives, documentários e produções autorais.",
     ariaLabels: {
       sectionLabel: "Lista completa de vídeos de projetos",
     },
@@ -382,6 +382,10 @@ export default {
         title: "Mina Friday | Mina Bem-estar",
         caption: "Mina Friday | Mina Bem-estar"
       },
-    ]
+    ],
+
+    textCard: {
+      title: "Novidades a caminho. Em breve, mais vídeos e projetos estarão disponíveis nesta página.",
+    },
   },
 };
