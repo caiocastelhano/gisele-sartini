@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styles from "./ProjectsGrid.module.css";
 import VideoModal from "../VideoModal/VideoModal";
 
@@ -10,18 +10,29 @@ export default function ProjectsGrid({ items, textCard, dictionary }) {
   const [currentVideo, setCurrentVideo] = useState(null);
   const [currentTitle, setCurrentTitle] = useState("");
 
-  useEffect(() => {
-    const checkScreen = () => setIsDesktop(window.innerWidth >= 1024);
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
+  const checkScreen = useCallback(() => {
+    setIsDesktop(window.innerWidth >= 1024);
   }, []);
 
+  useEffect(() => {
+    checkScreen();
+    window.addEventListener("resize", checkScreen);
+
+    return () => window.removeEventListener("resize", checkScreen);
+  }, [checkScreen]);
+
   const openVideo = (src, title) => {
-    if (isDesktop) {
-      setCurrentVideo(src);
-      setCurrentTitle(title);
-      setModalOpen(true);
+    if (!isDesktop) return;
+
+    setCurrentVideo(src);
+    setCurrentTitle(title);
+    setModalOpen(true);
+  };
+
+  const handleKeyOpen = (e, src, title) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      openVideo(src, title);
     }
   };
 
@@ -31,21 +42,23 @@ export default function ProjectsGrid({ items, textCard, dictionary }) {
         {items.map((video, idx) => (
           <div
             key={idx}
-            className={styles.videoCard}
+            className={`${styles.videoCard} ${isDesktop ? styles.cardClickable : ""}`}
+            role={isDesktop ? "button" : undefined}
+            tabIndex={isDesktop ? 0 : undefined}
+            aria-label={isDesktop ? dictionary.projectsPage.ariaOpenVideo : undefined}
             onClick={() => openVideo(video.src, video.title)}
-            style={{ cursor: isDesktop ? "pointer" : "default" }}
+            onKeyDown={(e) => handleKeyOpen(e, video.src, video.title)}
           >
             <div className={styles.videoWrapper}>
               <iframe
                 src={video.src}
                 title={video.title}
                 loading="lazy"
-                frameBorder="0"
                 allow="fullscreen; picture-in-picture"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
               />
             </div>
+
             <p className={styles.caption}>{video.caption}</p>
           </div>
         ))}

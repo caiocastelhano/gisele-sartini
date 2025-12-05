@@ -384,6 +384,9 @@ export default {
       },
     ],
 
+    backButtonText: "Voltar",
+    backButtonAria: "Voltar para a página inicial",
+
     textCard: {
       title: "Novidades a caminho. Em breve, mais vídeos e projetos estarão disponíveis nesta página.",
     },
@@ -391,6 +394,7 @@ export default {
 
   videoModal: {
     ariaCloseButton: "Fechar vídeo em tela cheia",
-    fallbackTitle: "Vídeo em destaque"
+    fallbackTitle: "Vídeo em destaque",
+    dialogTitle: "Vídeo em tela cheia",
   }
 };

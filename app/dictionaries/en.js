@@ -385,6 +385,9 @@ export default {
       },
     ],
 
+    backButtonText: "Back",
+    backButtonAria: "Return to the homepage",
+
     textCard: {
       title: "Updates on the way. Soon, more videos and projects will be available on this page.",
     },
@@ -392,6 +395,7 @@ export default {
 
   videoModal: {
     ariaCloseButton: "Close full-screen video",
-    fallbackTitle: "Featured video"
+    fallbackTitle: "Featured video",
+    dialogTitle: "Video in full screen",
   }
 };
