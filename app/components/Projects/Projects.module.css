@@ -1,15 +1,24 @@
 .projectsSection {
   background-color: #FDFBF8;
-  padding: 80px 16px;
+  padding: 0 0 80px 0;
   position: relative;
   overflow: hidden;
   z-index: 0;
 }
 
-.introWrapper {
-  max-width: 900px;
-  margin: 0 auto 60px auto;
+.headerBand {
+  width: 100%;
+  background: #E55347;
+  padding: 60px 16px;
   position: relative;
+  z-index: 10;
+  border-bottom: 1px solid #000;
+}
+
+.headerContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .introTitle {
@@ -19,13 +28,12 @@
   letter-spacing: 0.05em;
   margin-bottom: 24px;
   color: #000;
-  text-align: left;
+  text-align: center;
 }
 
 .introText {
   font-size: 1rem;
   line-height: 1.6;
-  max-width: 500px;
   margin: 0;          
   text-align: center;      
   color: #000;
@@ -55,6 +63,7 @@
 
 .grid {
   max-width: 1200px;
+  padding-top: 60px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -123,12 +132,6 @@
   outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .seeAllButton:hover {
-    transform: none;
-  }
-}
-
 .visuallyHidden {
   position: absolute !important;
   width: 1px !important;
@@ -141,6 +144,12 @@
   border: 0 !important;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .seeAllButton:hover {
+    transform: none;
+  }
+}
+
 /* TABLET (até 1024px)         */
 @media (max-width: 1024px) {
   .verticalLine,
@@ -149,24 +158,17 @@
   }
 
   .projectsSection {
-    padding: 60px 12px;
-  }
-
-  .introWrapper {
-    margin-bottom: 40px;
-    text-align: center;
+    padding: 0 0 60px 0;
   }
 
   .introTitle {
     font-size: 1.35rem;
-    text-align: center;
   }
 
   .introText {
     font-size: 0.95rem;
     max-width: 440px;
     margin: 0 auto;
-    text-align: center;
   }
 
   .grid {
@@ -186,29 +188,23 @@
   }
 
   .projectsSection {
-    padding: 40px 12px;
-  }
-
-  .introWrapper {
-    margin-bottom: 32px;
-    text-align: center;
+    padding: 0 0 40px 0;
   }
 
   .introTitle {
     font-size: 1.25rem;
-    text-align: center;
   }
 
   .introText {
     font-size: 0.9rem;
     max-width: 90%;
     margin: 0 auto;
-    text-align: center;
   }
 
   .grid {
     grid-template-columns: 1fr;
     gap: 28px;
+    padding-top: 32px;
   }
 
   .caption {
