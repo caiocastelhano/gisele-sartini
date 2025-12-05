@@ -35,7 +35,7 @@ export default function Projects({ dictionary }) {
                 frameBorder="0"
                 allow="fullscreen; picture-in-picture"
                 referrerPolicy="strict-origin-when-cross-origin"
-                fetchpriority="low"
+                fetchPriority="low"
                 allowFullScreen
               ></iframe>
             </div>
