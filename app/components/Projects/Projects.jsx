@@ -1,8 +1,17 @@
 import Link from "next/link";
 import styles from "./Projects.module.css";
 
-export default function Projects({ dictionary }) {
+export default function Projects({ dictionary, onVideoClick }) {
   const { projects } = dictionary;
+
+  function getYouTubeId(url) {
+    return url.split("/embed/")[1];
+  }
+
+  function getThumbnail(url) {
+    const id = getYouTubeId(url);
+    return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+  }
 
   return (
     <section
@@ -12,16 +21,13 @@ export default function Projects({ dictionary }) {
       role="region"
       aria-label={projects.ariaLabels.sectionLabel}
     >
-      {/* Linhas decorativas */}
       <span className={styles.verticalLine} aria-hidden="true"></span>
       <span className={styles.horizontalLine} aria-hidden="true"></span>
 
-      {/* Heading invisível para acessibilidade */}
       <h2 id="projects-heading" className={styles.visuallyHidden}>
         {projects.title}
       </h2>
 
-      {/* 🔥 FAIXA SEPARADA — igual a ProjectsPage */}
       <section className={styles.headerBand}>
         <div className={styles.headerContent}>
           <p className={styles.introTitle}>{projects.sectionTitle}</p>
@@ -29,22 +35,22 @@ export default function Projects({ dictionary }) {
         </div>
       </section>
 
-      {/* Conteúdo principal */}
       <div className={styles.grid}>
         {projects.items.slice(0, 9).map((video, idx) => (
           <div key={idx} className={styles.videoCard}>
-            <div className={styles.videoWrapper}>
-              <iframe
-                src={video.src}
-                title={video.title}
-                loading="lazy"
-                frameBorder="0"
-                allow="fullscreen; picture-in-picture"
-                referrerPolicy="strict-origin-when-cross-origin"
-                fetchPriority="low"
-                allowFullScreen
-              />
-            </div>
+            <button
+              className={styles.thumbnailButton}
+              onClick={() => onVideoClick(video.src, video.title)}
+            >
+              <div className={styles.videoWrapper}>
+                <img
+                  src={getThumbnail(video.src)}
+                  alt={video.title}
+                  className={styles.thumbnail}
+                />
+                <div className={styles.playOverlay}>▶</div>
+              </div>
+            </button>
 
             <p className={styles.caption}>{video.caption}</p>
           </div>
