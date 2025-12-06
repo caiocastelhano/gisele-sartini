@@ -1,3 +1,6 @@
+export const dynamic = "force-dynamic";
+
+import { cookies } from "next/headers";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -8,7 +11,11 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
 
-export default function ProjectsPage({ lang = "pt" }) {
+export default async function ProjectsPage() {
+  // Lê o cookie do idioma, igual à Home
+  const cookieStore = await cookies();
+  const lang = cookieStore.get("lang")?.value === "en" ? "en" : "pt";
+
   const dictionary = lang === "en" ? en : pt;
   const { projectsPage } = dictionary;
 
@@ -25,7 +32,7 @@ export default function ProjectsPage({ lang = "pt" }) {
         <span className={styles.verticalLine} aria-hidden="true"></span>
         <span className={styles.horizontalLine} aria-hidden="true"></span>
 
-        {/* Faixa de Título */}
+        {/* Faixa de título */}
         <section className={styles.headerBand}>
           <div className={styles.headerContent}>
             <h1 id="projects-heading" className={styles.title}>
@@ -35,7 +42,7 @@ export default function ProjectsPage({ lang = "pt" }) {
           </div>
         </section>
 
-        {/* Conteúdo Principal */}
+        {/* Grid de projetos */}
         <div className={styles.pageContainer}>
           <ProjectsGrid
             items={projectsPage.items}
