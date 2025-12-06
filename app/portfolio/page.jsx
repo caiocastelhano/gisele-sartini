@@ -12,7 +12,6 @@ import Footer from "../components/Footer/Footer";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
 
 export default async function ProjectsPage() {
-  // Lê o cookie do idioma, igual à Home
   const cookieStore = await cookies();
   const lang = cookieStore.get("lang")?.value === "en" ? "en" : "pt";
 
@@ -28,11 +27,9 @@ export default async function ProjectsPage() {
         aria-labelledby="projects-heading"
         className={styles.pageBackground}
       >
-        {/* Elementos decorativos */}
         <span className={styles.verticalLine} aria-hidden="true"></span>
         <span className={styles.horizontalLine} aria-hidden="true"></span>
 
-        {/* Faixa de título */}
         <section className={styles.headerBand}>
           <div className={styles.headerContent}>
             <h1 id="projects-heading" className={styles.title}>
@@ -42,7 +39,6 @@ export default async function ProjectsPage() {
           </div>
         </section>
 
-        {/* Grid de projetos */}
         <div className={styles.pageContainer}>
           <ProjectsGrid
             items={projectsPage.items}
