@@ -246,4 +246,22 @@
     padding: 16px 36px;
     font-size: 1rem;
   }
+
+  .videoCard {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .videoWrapper {
+    width: 100%;
+  }
+
+  .thumbnailButton {
+    width: 100%;
+  }
+
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
 }
