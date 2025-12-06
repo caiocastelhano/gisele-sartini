@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import HeroSection from "../HeroSection/HeroSection";
 import Bio from "../Bio/Bio";
@@ -9,21 +9,24 @@ import Projects from "../Projects/Projects";
 import Clients from "../Clients/Clients";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import VideoModal from "../VideoModal/VideoModal";
 
 export default function HomeContent({ dictionary, lang }) {
-  useEffect(() => {
-    function updateVh() {
-      document.documentElement.style.setProperty(
-        "--vh",
-        `${window.innerHeight * 0.01}px`
-      );
-    }
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentVideoSrc, setCurrentVideoSrc] = useState("");
+  const [currentVideoTitle, setCurrentVideoTitle] = useState("");
 
-    updateVh();
-    window.addEventListener("resize", updateVh);
+  function handleOpenVideo(src, title) {
+    setCurrentVideoSrc(src);
+    setCurrentVideoTitle(title);
+    setIsModalOpen(true);
+  }
 
-    return () => window.removeEventListener("resize", updateVh);
-  }, []);
+  function handleCloseVideo() {
+    setIsModalOpen(false);
+    setCurrentVideoSrc("");
+    setCurrentVideoTitle("");
+  }
 
   return (
     <>
@@ -31,10 +34,20 @@ export default function HomeContent({ dictionary, lang }) {
       <HeroSection dictionary={dictionary} />
       <Bio dictionary={dictionary} lang={lang} />
       <Tools dictionary={dictionary} />
-      <Projects dictionary={dictionary} />
+
+      <Projects dictionary={dictionary} onVideoClick={handleOpenVideo} />
+
       <Clients dictionary={dictionary} />
       <Contact dictionary={dictionary} />
       <Footer dictionary={dictionary} />
+
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={handleCloseVideo}
+        videoSrc={currentVideoSrc}
+        videoTitle={currentVideoTitle}
+        dictionary={dictionary}
+      />
     </>
   );
 }
