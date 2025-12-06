@@ -1,3 +1,7 @@
+/* ----------------------- */
+/* DESKTOP (default)       */
+/* ----------------------- */
+
 .pageBackground {
   width: 100%;
   min-height: 100vh;
@@ -63,31 +67,11 @@
   position: relative;
 }
 
-.buttonWrapper {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.backButton {
-  padding: 12px 28px;
-  border: 1px solid #000;
-  background: #E55347;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.backButton:hover,
-.backButton:focus-visible {
-  background: #fcbf49;
-  color: #000;
-  outline: 2px solid #000;
-  outline-offset: 4px;
+/* GRID (desktop) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
 
 .textCard {
@@ -121,4 +105,76 @@
   margin-top: 12px;
   font-size: 1rem;
   line-height: 1.4;
+}
+
+.buttonWrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.backButton {
+  padding: 12px 28px;
+  border: 1px solid #000;
+  background: #E55347;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.backButton:hover,
+.backButton:focus-visible {
+  background: #fcbf49;
+  color: #000;
+  outline: 2px solid #000;
+  outline-offset: 4px;
+}
+
+/* TABLET (até 1024px)         */
+@media (max-width: 1024px) {
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* MOBILE (até 600px)         */
+@media (max-width: 600px) {
+  .verticalLine,
+  .horizontalLine {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .pageContainer {
+    padding: 32px 16px;
+  }
 }
