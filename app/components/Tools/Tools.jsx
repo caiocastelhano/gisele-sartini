@@ -36,26 +36,34 @@ export default function Tools({ dictionary }) {
 
         {secondRow.map((tool) => (
           <div key={tool.label} role="listitem" className={styles.toolCard}>
-            <Image
-              src={tool.src}
-              alt={tool.alt}
-              width={80}
-              height={80}
-              className={styles.logo}
-            />
+            
+            <div className={styles.logoWrapper}>
+              <Image
+                src={tool.src}
+                alt={tool.alt}
+                width={80}
+                height={80}
+                className={styles.logo}
+              />
+            </div>
+
             <span className={styles.label}>{tool.label}</span>
           </div>
         ))}
 
         {firstRow.map((tool) => (
           <div key={tool.label} role="listitem" className={styles.toolCard}>
-            <Image
-              src={tool.src}
-              alt={tool.alt}
-              width={80}
-              height={80}
-              className={styles.logo}
-            />
+            
+            <div className={styles.logoWrapper}>
+              <Image
+                src={tool.src}
+                alt={tool.alt}
+                width={80}
+                height={80}
+                className={styles.logo}
+              />
+            </div>
+
             <span className={styles.label}>{tool.label}</span>
           </div>
         ))}
