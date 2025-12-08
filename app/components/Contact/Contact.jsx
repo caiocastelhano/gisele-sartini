@@ -7,26 +7,26 @@ export default function Contact({ dictionary }) {
   const [emailLink, setEmailLink] = useState("");
 
   useEffect(() => {
-    function getUniversalEmailLink(email) {
+    function getUniversalEmailLink(email, subject) {
       const userAgent = navigator.userAgent.toLowerCase();
 
       if (userAgent.includes("outlook") || userAgent.includes("windows nt")) {
-        return `https://outlook.office.com/mail/deeplink/compose?to=${email}`;
+        return `https://outlook.office.com/mail/deeplink/compose?to=${email}&subject=${subject}`;
       }
 
       if (/iphone|ipad|ipod/.test(userAgent)) {
-        return `mailto:${email}`;
+        return `mailto:${email}?subject=${subject}`;
       }
 
       if (userAgent.includes("android")) {
-        return `mailto:${email}`;
+        return `mailto:${email}?subject=${subject}`;
       }
 
-      return `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+      return `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}`;
     }
 
-    setEmailLink(getUniversalEmailLink(contact.links.email));
-  }, [contact.links.email]);
+    setEmailLink(getUniversalEmailLink(contact.links.email, contact.links.emailSubject));
+  }, [contact.links.email, contact.links.emailSubject]);
 
   return (
     <section
