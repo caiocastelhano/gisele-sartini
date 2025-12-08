@@ -3,11 +3,30 @@ export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Tenor_Sans } from "next/font/google";
+import { Poppins, Outfit, Josefin_Sans, Space_Grotesk } from "next/font/google";
 
-const tenor = Tenor_Sans({
-  weight: "400",
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-poppins",
+});
+
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
+const josefin = Josefin_Sans({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-josefin",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  weight: ["300", "400", "500"],
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
 });
 
 const geistSans = Geist({
@@ -32,7 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body className={`${tenor.className} antialiased`}>
+      <body className={`${spaceGrotesk.className} antialiased`}>
         {children}
       </body>
     </html>
