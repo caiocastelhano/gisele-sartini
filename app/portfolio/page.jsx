@@ -10,6 +10,7 @@ import en from "../dictionaries/en";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
+import FloatingContactMenu from "../components/FloatingContactMenu/FloatingContactMenu";
 
 export default async function ProjectsPage() {
   const cookieStore = await cookies();
@@ -57,6 +58,8 @@ export default async function ProjectsPage() {
           </div>
         </div>
       </main>
+
+      <FloatingContactMenu dictionary={dictionary} />
 
       <Footer dictionary={dictionary} />
     </>
