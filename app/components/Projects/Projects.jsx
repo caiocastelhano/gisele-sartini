@@ -1,8 +1,12 @@
 import Link from "next/link";
 import styles from "./Projects.module.css";
+import { usePathname } from "next/navigation";
 
 export default function Projects({ dictionary, onVideoClick }) {
   const { projects } = dictionary;
+
+  const pathname = usePathname();
+  const lang = pathname.startsWith("/en") ? "en" : "pt";
 
   function getYouTubeId(url) {
     return url.split("/embed/")[1];
@@ -59,7 +63,7 @@ export default function Projects({ dictionary, onVideoClick }) {
 
       <div className={styles.buttonWrapper}>
         <Link
-          href="/portfolio"
+          href={`/${lang}/portfolio`}
           className={styles.seeAllButton}
           aria-label={projects.ariaLabels.seeAllButton}
         >

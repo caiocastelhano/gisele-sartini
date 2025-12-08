@@ -1,21 +1,20 @@
 "use client";
 
-import { useTransition } from "react";
-import { useRouter } from "next/navigation";
-import { setLanguage } from "../../actions/setLanguage";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./LanguageSwitcher.module.css";
 
 export default function LanguageSwitcher({ currentLang, dictionary }) {
-  const [isPending, startTransition] = useTransition();
+  const pathname = usePathname();
   const router = useRouter();
 
-  const changeLang = (lang) => {
-    if (lang === currentLang) return;
+  const switchLang = (newLang) => {
+    if (newLang === currentLang) return;
 
-    startTransition(async () => {
-      await setLanguage(lang);
-      router.refresh();
-    });
+    const cleanPath = pathname.replace(/^\/(pt|en)/, "");
+
+    const newPath = `/${newLang}${cleanPath}`;
+
+    router.push(newPath);
   };
 
   return (
@@ -28,8 +27,7 @@ export default function LanguageSwitcher({ currentLang, dictionary }) {
         className={`${styles.flag} ${
           currentLang === "pt" ? styles.active : ""
         }`}
-        onClick={() => changeLang("pt")}
-        disabled={isPending}
+        onClick={() => switchLang("pt")}
         aria-label={dictionary.lang.switchToPT}
         aria-pressed={currentLang === "pt"}
       >
@@ -46,8 +44,7 @@ export default function LanguageSwitcher({ currentLang, dictionary }) {
         className={`${styles.flag} ${
           currentLang === "en" ? styles.active : ""
         }`}
-        onClick={() => changeLang("en")}
-        disabled={isPending}
+        onClick={() => switchLang("en")}
         aria-label={dictionary.lang.switchToEN}
         aria-pressed={currentLang === "en"}
       >
