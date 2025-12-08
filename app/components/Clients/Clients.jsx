@@ -23,21 +23,17 @@ export default function Clients({ dictionary }) {
 
         {clients.items.map((client, idx) => (
           <div key={idx} className={styles.clientCard}>
-            <img
-              src={client.image}
-              alt={client.alt}
-              className={styles.logo}
-              loading="lazy"
-              decoding="async"
-            />
+            <div className={styles.logoWrapper}>
+              <img
+                src={client.image}
+                alt={client.alt}
+                className={styles.logo}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
         ))}
-
-        <div
-          className={styles.emptyCard}
-          aria-hidden="true"
-          role="presentation"
-        ></div>
       </div>
     </section>
   );

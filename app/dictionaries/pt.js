@@ -168,7 +168,11 @@ export default {
       {
         image: "/clients/zazo.png",
         alt: "Logotipo ZAZO Produções"
-      }
+      },
+      {
+        image: "/clients/cea.png",
+        alt: "Logotipo C&A"
+      },
     ]
   },
 
