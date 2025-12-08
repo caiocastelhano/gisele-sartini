@@ -50,8 +50,8 @@
   text-transform: uppercase;
   font-weight: 600;
 
-  color: #000;
-  background-color: #fcbf49;
+  color: #fdfbf8;
+  background-color: #E55347;
   border: 1px solid #000;
   cursor: pointer;
 
@@ -59,8 +59,7 @@
 }
 
 .cvButton:hover {
-  background-color: #E55347;
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.03);
 }
 
 .rightColumn {

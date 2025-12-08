@@ -118,13 +118,12 @@
   letter-spacing: 0.05em;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #000;
+  color: #fdfbf8;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .seeAllButton:hover {
-  background-color: #fcbf49;
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.03);
 }
 
 .seeAllButton:focus-visible {
