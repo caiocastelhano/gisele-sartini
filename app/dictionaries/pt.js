@@ -197,6 +197,11 @@ export default {
       linkedin: "Abrir perfil no LinkedIn em nova aba",
       whatsapp: "Enviar mensagem pelo WhatsApp em nova aba"
     },
+    iconAlt: {
+      email: "Ícone de e-mail",
+      linkedin: "Ícone do LinkedIn",
+      whatsapp: "Ícone do WhatsApp"
+    },
   },
 
   footer: {
