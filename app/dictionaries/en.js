@@ -26,13 +26,18 @@ export default {
     title: "About Gisele",
     alt: "Portrait of Gisele Sartini",
     paragraphs: [
-      "Hi, it's really nice to have you here!",
-      "My name is <strong>Gisele Sartini</strong>, and I'm a <strong>Brazilian multimedia professional passionate about storytelling through audiovisual media</strong>. My background combines a degree in Journalism from Cásper Líbero College with a technical specialization in Cinema, providing a solid foundation for strategic and creative work.",
-      "My expertise spans the entire filmmaking production: <strong>from scriptwriting to video editing, motion design, live stream operation (VMix/Streamyard), and production</strong>. At TV Gazeta, I work as a Videomaker, Scriptwriter, and Live Stream Operator, creating content for the <strong>Fundação Cásper Líbero</strong>'s social media channels. Previously, I collaborated with companies such as <strong>Empiricus, Jellysmack, and the portal Mina Bem-Estar</strong>, editing videos focused on engagement, sales, and audience growth for platforms like YouTube and social media.",
-      "I have also channeled my creativity into independent projects, having produced and edited the documentary <em>\"Entre Latas e Luta\"</em> and participated in several short films in roles such as <strong>art direction, scriptwriting, and post-production.</strong>",
-      "I am proficient in the <strong>Advanced Adobe Suite (Premiere, After Effects, Photoshop, Audition) and tools like OBS, Avid, and Midjourney</strong>. I am fluent in English, have an advanced level of Spanish, and intermediate knowledge of Italian, enabling me to collaborate on international projects.",
-      "I am always seeking new challenges to create <strong>innovative and impactful visual content.</strong>"
-    ]
+      "Hello, it's a pleasure to have you here!",
+
+      "My name is <strong>Gisele Sartini</strong>. I'm a <strong>multimedia professional passionate about storytelling through audiovisual work</strong>. I hold a Journalism degree from Cásper Líbero and a technical specialization in Film, combining strategy, creativity, and solid technical skills.",
+
+      "My experience covers the entire audiovisual pipeline: <strong>scriptwriting, video editing, motion design, livestream operations (VMix/Streamyard) and production</strong>. At TV Gazeta, I work as a videomaker, scriptwriter and livestream operator for <strong>Fundação Cásper Líbero</strong>. I’ve also collaborated with <strong>Empiricus, Jellysmack, and Mina Bem-Estar</strong>, creating content focused on engagement and performance across YouTube and social platforms.",
+
+      "I also develop personal projects, including the documentary <em>\"Entre Latas e Luta\"</em>, and have contributed to several short films in roles such as <strong>art direction, writing and post-production</strong>.",
+
+      "I'm proficient in the <strong>Adobe Suite (Premiere, After Effects, Photoshop, Audition)</strong>, as well as OBS, Avid and Midjourney. I'm fluent in English, speak advanced Spanish and intermediate Italian.",
+
+      "I'm always open to new challenges to create <strong>impactful and innovative visual content</strong>."
+    ],
   },
 
   cv: {
