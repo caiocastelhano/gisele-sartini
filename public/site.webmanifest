@@ -1,0 +1,22 @@
+{
+  "name": "Gisele Sartini | Portfolio",
+  "short_name": "Gisele Sartini",
+  "description": "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design e produções audiovisuais.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF6",
+  "theme_color": "#E55347",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
