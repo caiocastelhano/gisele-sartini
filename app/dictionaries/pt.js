@@ -179,7 +179,7 @@ export default {
     links: {
       email: "giselesartini@gmail.com",
       linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/",
-      whatsapp: "https://wa.me/5511954768053"
+      whatsapp: "https://wa.me/5511954768053?text=Ol%C3%A1%2C%20Gisele!%20Acabei%20de%20visitar%20o%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20falar%3F"
     },
     ariaLabels: {
       sectionLabel: "Seção de contato",
