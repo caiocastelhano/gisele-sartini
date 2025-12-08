@@ -5,8 +5,8 @@ export default function Bio({ dictionary, lang }) {
 
   const cvFile =
     lang === "pt"
-      ? "/cv-file/CV-PT.pdf"
-      : "/cv-file/CV-ENG.pdf";
+      ? "/cv-file/CV-PT-Gisele-Sartini.pdf"
+      : "/cv-file/CV-ENG-Gisele-Sartini.pdf";
 
   const cvAriaLabel =
     lang === "pt"
