@@ -178,7 +178,7 @@ export default {
     whatsappCta: "WhatsApp",
     links: {
       email: "giselesartini@gmail.com",
-      linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/",
+      linkedin: "https://www.linkedin.com/in/gisele-sartini-guaraldo-425a55b8/?locale=en_US",
       whatsapp: "https://wa.me/5511954768053"
     },
     ariaLabels: {
