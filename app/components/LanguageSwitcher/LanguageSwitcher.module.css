@@ -25,7 +25,7 @@
 
 .active {
   border-color: #000;
-  background-color: #fffae9;
+  background-color: #fcbf49;
 }
 
 .flag:hover:not(.active) {

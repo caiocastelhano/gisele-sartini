@@ -103,7 +103,7 @@ export default function Navbar({ lang, dictionary }) {
               <Link
                 href="#projects"
                 onClick={(e) => handleAnchorClick(e, "#projects")}
-                className={`${styles.linkWrapper} ${styles.yellow}`}
+                className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.projectsLabel}
               >
                 <span className={styles.link}>{dictionary.navbar.projects}</span>

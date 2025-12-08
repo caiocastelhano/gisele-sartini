@@ -51,7 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt">
-      <body className={`${spaceGrotesk.className} antialiased`}>
+      <body className={`${poppins.className} antialiased`}>
         {children}
       </body>
     </html>
