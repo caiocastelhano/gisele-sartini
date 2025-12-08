@@ -5,7 +5,6 @@ import pt from "./dictionaries/pt";
 import en from "./dictionaries/en";
 import HomeContent from "./components/HomeContent/HomeContent";
 
-// ⭐ METATAGS DA HOME (PADRONIZADAS)
 export const metadata = {
   title: "Gisele Sartini | Edição de Vídeo & Motion Design",
 

@@ -10,8 +10,9 @@ export default function LanguageSwitcher({ currentLang, dictionary }) {
   const switchLang = (newLang) => {
     if (newLang === currentLang) return;
 
-    const cleanPath = pathname.replace(/^\/(pt|en)/, "");
+    document.cookie = `lang=${newLang}; path=/; max-age=31536000`;
 
+    const cleanPath = pathname.replace(/^\/(pt|en)/, "");
     const newPath = `/${newLang}${cleanPath}`;
 
     router.push(newPath);
