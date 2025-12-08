@@ -12,6 +12,41 @@ import Footer from "../components/Footer/Footer";
 import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
 import FloatingContactMenu from "../components/FloatingContactMenu/FloatingContactMenu";
 
+// ⭐ METATAGS DA PÁGINA PORTFOLIO (PADRONIZADOS)
+export const metadata = {
+  title: "Portfolio",
+
+  description:
+    "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
+
+  alternates: {
+    canonical: "/portfolio",
+  },
+
+  openGraph: {
+    title: "Portfolio | Gisele Sartini",
+    description:
+      "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
+    url: "/portfolio",
+    images: [
+      {
+        url: "/og/gisele-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Retrato profissional de Gisele Sartini",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio | Gisele Sartini",
+    description:
+      "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
+    images: ["/og/gisele-og-image.jpg"],
+  },
+};
+
 export default async function ProjectsPage() {
   const cookieStore = await cookies();
   const lang = cookieStore.get("lang")?.value === "en" ? "en" : "pt";
