@@ -197,6 +197,11 @@ export default {
       linkedin: "Open LinkedIn profile in a new tab",
       whatsapp: "Send a WhatsApp message in a new tab"
     },
+    iconAlt: {
+      email: "Email icon",
+      linkedin: "LinkedIn icon",
+      whatsapp: "WhatsApp icon"
+    },
   },
 
   footer: {

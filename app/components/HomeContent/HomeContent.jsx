@@ -10,6 +10,7 @@ import Clients from "../Clients/Clients";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import VideoModal from "../VideoModal/VideoModal";
+import FloatingContactMenu from "../FloatingContactMenu/FloatingContactMenu"
 
 export default function HomeContent({ dictionary, lang }) {
   
@@ -70,6 +71,7 @@ export default function HomeContent({ dictionary, lang }) {
 
       <Clients dictionary={dictionary} />
       <Contact dictionary={dictionary} />
+      <FloatingContactMenu dictionary={dictionary} />
       <Footer dictionary={dictionary} />
 
       <VideoModal
