@@ -1,39 +1,36 @@
 export const dynamic = "force-dynamic";
 
-import { cookies } from "next/headers";
 import Link from "next/link";
 import styles from "./page.module.css";
 
-import pt from "../dictionaries/pt";
-import en from "../dictionaries/en";
+import en from "../../dictionaries/en";
 
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import ProjectsGrid from "../components/ProjectsGrid/ProjectsGrid";
-import FloatingContactMenu from "../components/FloatingContactMenu/FloatingContactMenu";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import ProjectsGrid from "../../components/ProjectsGrid/ProjectsGrid";
+import FloatingContactMenu from "../../components/FloatingContactMenu/FloatingContactMenu";
 
-// ⭐ METATAGS DA PÁGINA PORTFOLIO (PADRONIZADOS)
 export const metadata = {
   title: "Portfolio",
 
   description:
-    "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
+    "Official portfolio of Gisele Sartini — video editing, motion design, reels and audiovisual productions.",
 
   alternates: {
-    canonical: "/portfolio",
+    canonical: "/en/portfolio",
   },
 
   openGraph: {
     title: "Portfolio | Gisele Sartini",
     description:
-      "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
-    url: "/portfolio",
+      "Official portfolio of Gisele Sartini — video editing, motion design, reels and audiovisual productions.",
+    url: "/en/portfolio",
     images: [
       {
         url: "/og/gisele-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Retrato profissional de Gisele Sartini",
+        alt: "Professional portrait of Gisele Sartini",
       },
     ],
   },
@@ -42,21 +39,18 @@ export const metadata = {
     card: "summary_large_image",
     title: "Portfolio | Gisele Sartini",
     description:
-      "Portfólio oficial de Gisele Sartini — edição de vídeo, motion design, reels e produções audiovisuais.",
+      "Official portfolio of Gisele Sartini — video editing, motion design, reels and audiovisual productions.",
     images: ["/og/gisele-og-image.jpg"],
   },
 };
 
-export default async function ProjectsPage() {
-  const cookieStore = await cookies();
-  const lang = cookieStore.get("lang")?.value === "en" ? "en" : "pt";
-
-  const dictionary = lang === "en" ? en : pt;
+export default function ProjectsPage() {
+  const dictionary = en;
   const { projectsPage } = dictionary;
 
   return (
     <>
-      <Navbar lang={lang} dictionary={dictionary} />
+      <Navbar lang="en" dictionary={dictionary} />
 
       <main
         id="projects-page"
@@ -84,7 +78,7 @@ export default async function ProjectsPage() {
 
           <div className={styles.buttonWrapper}>
             <Link
-              href="/"
+              href="/en"
               className={styles.backButton}
               aria-label={projectsPage.backButtonAria}
             >

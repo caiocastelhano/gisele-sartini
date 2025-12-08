@@ -6,22 +6,23 @@ import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-export default function Navbar({ lang, dictionary }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Navbar({ dictionary }) {
+  const pathname = usePathname();
 
+  const segments = pathname.split("/");
+  const currentLang = segments[1] === "en" ? "en" : "pt";
+
+  const isHome = pathname === `/${currentLang}`;
+
+  const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
   const navRef = useRef(null);
 
-  const pathname = usePathname();
-  const isHome = pathname === "/";
-
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev);
-  };
+  const toggleMenu = () => setIsOpen((prev) => prev + 0 === 1 ? false : true);
 
   useEffect(() => {
-    function handleClickOutside(event) {
+    const handleClickOutside = (event) => {
       if (
         menuRef.current &&
         !menuRef.current.contains(event.target) &&
@@ -30,7 +31,7 @@ export default function Navbar({ lang, dictionary }) {
       ) {
         setIsOpen(false);
       }
-    }
+    };
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
@@ -46,15 +47,17 @@ export default function Navbar({ lang, dictionary }) {
 
     const navHeight = navRef.current ? navRef.current.offsetHeight : 0;
 
-    const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
-    const offsetPosition = elementTop - navHeight - 8; 
+    const elementTop =
+      targetElement.getBoundingClientRect().top + window.scrollY;
+
+    const offsetPosition = elementTop - navHeight - 8;
 
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
     });
 
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   return (
@@ -64,7 +67,7 @@ export default function Navbar({ lang, dictionary }) {
       aria-label={dictionary.navbar.navLabel}
     >
       <Link
-        href="/"
+        href={`/${currentLang}`}
         className={styles.name}
         aria-label={dictionary.navbar.homeLabel}
       >
@@ -79,7 +82,7 @@ export default function Navbar({ lang, dictionary }) {
           <>
             <li>
               <Link
-                href="#about"
+                href={`/${currentLang}#about`}
                 onClick={(e) => handleAnchorClick(e, "#about")}
                 className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.bioLabel}
@@ -90,7 +93,7 @@ export default function Navbar({ lang, dictionary }) {
 
             <li>
               <Link
-                href="#tools"
+                href={`/${currentLang}#tools`}
                 onClick={(e) => handleAnchorClick(e, "#tools")}
                 className={`${styles.linkWrapper} ${styles.blue}`}
                 aria-label={dictionary.navbar.toolsLabel}
@@ -101,7 +104,7 @@ export default function Navbar({ lang, dictionary }) {
 
             <li>
               <Link
-                href="#projects"
+                href={`/${currentLang}#projects`}
                 onClick={(e) => handleAnchorClick(e, "#projects")}
                 className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.projectsLabel}
@@ -112,7 +115,7 @@ export default function Navbar({ lang, dictionary }) {
 
             <li>
               <Link
-                href="#clients"
+                href={`/${currentLang}#clients`}
                 onClick={(e) => handleAnchorClick(e, "#clients")}
                 className={`${styles.linkWrapper} ${styles.blue}`}
                 aria-label={dictionary.navbar.brandsLabel}
@@ -123,7 +126,7 @@ export default function Navbar({ lang, dictionary }) {
 
             <li>
               <Link
-                href="#contact"
+                href={`/${currentLang}#contact`}
                 onClick={(e) => handleAnchorClick(e, "#contact")}
                 className={`${styles.linkWrapper} ${styles.red}`}
                 aria-label={dictionary.navbar.contactLabel}
@@ -135,7 +138,7 @@ export default function Navbar({ lang, dictionary }) {
         )}
 
         <li className={styles.languageWrapper}>
-          <LanguageSwitcher currentLang={lang} dictionary={dictionary} />
+          <LanguageSwitcher currentLang={currentLang} dictionary={dictionary} />
         </li>
       </ul>
 
