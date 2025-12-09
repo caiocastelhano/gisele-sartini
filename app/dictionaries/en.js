@@ -226,178 +226,213 @@ export default {
       {
         src: "https://www.youtube.com/embed/XTXKzDz3Tb0",
         title: "Chocolate Cake by Chef Patrícia Figueiredo | TV Gazeta",
-        caption: "Chocolate Cake by Chef Patrícia Figueiredo | TV Gazeta"
+        caption: "Chocolate Cake by Chef Patrícia Figueiredo | TV Gazeta",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/tD3FTAZ8was",
         title: "SÃO SILVESTRE: Exclusive interview with Paul Tergat, the race's greatest champion",
-        caption: "SÃO SILVESTRE: Exclusive interview with Paul Tergat, the race's greatest champion"
+        caption: "SÃO SILVESTRE: Exclusive interview with Paul Tergat, the race's greatest champion",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/iLvTiLUdUp4",
         title: "PRE-GAME: Corinthians vs Palmeiras - Brazilian Cup + DANIEL FURLAN LIVE | #TáNoJogo #80",
-        caption: "PRE-GAME: Corinthians vs Palmeiras - Brazilian Cup + DANIEL FURLAN LIVE | #TáNoJogo #80"
+        caption: "PRE-GAME: Corinthians vs Palmeiras - Brazilian Cup + DANIEL FURLAN LIVE | #TáNoJogo #80",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/ZRl07ekvBko",
         title: "PÉRICLES - Exclusive Interview | Gazeta FM",
-        caption: "PÉRICLES - Exclusive Interview | Gazeta FM"
+        caption: "PÉRICLES - Exclusive Interview | Gazeta FM",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/F1IMKT-lVOM",
         title: "Pauta & Prosa #24: Spirituality in the Digital Age | Jornal da Gazeta",
-        caption: "Pauta & Prosa #24: Spirituality in the Digital Age | Jornal da Gazeta"
+        caption: "Pauta & Prosa #24: Spirituality in the Digital Age | Jornal da Gazeta",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/DhF7f-kgS7c",
         title: "It may not look like it, but it's WORK: Carnival & Entertainment Journalism | Central 900 - Ep. 2",
-        caption: "It may not look like it, but it's WORK: Carnival & Entertainment Journalism | Central 900 - Ep. 2"
+        caption: "It may not look like it, but it's WORK: Carnival & Entertainment Journalism | Central 900 - Ep. 2",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/-dfpISBxUww",
         title: "ITUB4 reports record results, IGTI11 surprises, and ROXO34 rises — buy or sell? | Money Times",
-        caption: "ITUB4 reports record results, IGTI11 surprises, and ROXO34 rises — buy or sell? | Money Times"
+        caption: "ITUB4 reports record results, IGTI11 surprises, and ROXO34 rises — buy or sell? | Money Times",
+        category: "categoria1"
       },
       {
         src: "https://www.youtube.com/embed/7Ke3ZIy5EAE",
         title: "Stop talking to your mother | Mina Bem-estar",
-        caption: "Stop talking to your mother | Mina Bem-estar"
+        caption: "Stop talking to your mother | Mina Bem-estar",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/n3jtNVomhDE",
         title: "VLOG Crica + Banco Pan",
-        caption: "VLOG Crica + Banco Pan"
+        caption: "VLOG Crica + Banco Pan",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/T6GsH1hQhRU",
         title: "GUEST: The Brazil That Worked + Ancelotti's Debut + Corinthians INVASION | #TáNoJogo #65",
-        caption: "GUEST: The Brazil That Worked + Ancelotti's Debut + Corinthians INVASION | #TáNoJogo #65"
+        caption: "GUEST: The Brazil That Worked + Ancelotti's Debut + Corinthians INVASION | #TáNoJogo #65",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/EpAnyncIW3U",
         title: "GLORIA GROOVE - Exclusive Interview",
-        caption: "GLORIA GROOVE - Exclusive Interview"
+        caption: "GLORIA GROOVE - Exclusive Interview",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/O_gIYrPSbpg",
         title: "THIAGUINHO - Exclusive Interview",
-        caption: "THIAGUINHO - Exclusive Interview"
+        caption: "THIAGUINHO - Exclusive Interview",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/xpLYHYKJuwk",
         title: "DROPS DE ANIS #8 - Leona Cavalli: Art as Craft",
-        caption: "DROPS DE ANIS #8 - Leona Cavalli: Art as Craft"
+        caption: "DROPS DE ANIS #8 - Leona Cavalli: Art as Craft",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/B27uCsWGtX0",
         title: "DROPS DE ANIS #4 - A conversation with actress Virgínia Cavendish",
-        caption: "DROPS DE ANIS #4 - A conversation with actress Virgínia Cavendish"
+        caption: "DROPS DE ANIS #4 - A conversation with actress Virgínia Cavendish",
+        category: "categoria2"
       },
       {
         src: "https://www.youtube.com/embed/3tURaF8PtBU",
         title: "DROPS DE ANIS #3 - Clip with Leonardo Miggiorin",
-        caption: "DROPS DE ANIS #3 - Clip with Leonardo Miggiorin"
+        caption: "DROPS DE ANIS #3 - Clip with Leonardo Miggiorin",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/EXi7NwNXrcI",
         title: "Pauta & Prosa #23 - Time and Happiness | Mario Sérgio Cortella",
-        caption: "Pauta & Prosa #23 - Time and Happiness | Mario Sérgio Cortella"
+        caption: "Pauta & Prosa #23 - Time and Happiness | Mario Sérgio Cortella",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/Dz010IZ-EEU",
         title: "What Do We Have Left? | World's First Vegan Pro Bodybuilder",
-        caption: "What Do We Have Left? | World's First Vegan Pro Bodybuilder"
+        caption: "What Do We Have Left? | World's First Vegan Pro Bodybuilder",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/XecONcv9Vas",
         title: "Journalist & Digital Influencer: The best (and hardest) of both worlds | Central 900 - Ep. 18",
-        caption: "Journalist & Digital Influencer: The best (and hardest) of both worlds | Central 900 - Ep. 18"
+        caption: "Journalist & Digital Influencer: The best (and hardest) of both worlds | Central 900 - Ep. 18",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/ZWRtHH-8crA",
         title: "Chasing Fame: Media Training & Reality Shows | Central 900 - Ep. 1",
-        caption: "Chasing Fame: Media Training & Reality Shows | Central 900 - Ep. 1"
+        caption: "Chasing Fame: Media Training & Reality Shows | Central 900 - Ep. 1",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/zhJi1uWoP_Q",
         title: "One Year Without Paulo Gustavo: Angélica talks with Ingrid Guimarães",
-        caption: "One Year Without Paulo Gustavo: Angélica talks with Ingrid Guimarães"
+        caption: "One Year Without Paulo Gustavo: Angélica talks with Ingrid Guimarães",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/XI5_8_NC8TY",
         title: "Dandara Pagu: Is it better to be married or single?",
-        caption: "Dandara Pagu: Is it better to be married or single?"
+        caption: "Dandara Pagu: Is it better to be married or single?",
+        category: "categoria3"
       },
       {
         src: "https://www.youtube.com/embed/XjDrxgJsoFY?list=PL9i60BZmDe5gHidCN53ThbYSANQsoiaM7",
         title: "Barbosa: Defending a Legacy",
-        caption: "Barbosa: Defending a Legacy"
+        caption: "Barbosa: Defending a Legacy",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/VUQ-Dkyl7Mc",
         title: "Is Brexit Good for the Ibovespa? | Ask Me Anything",
-        caption: "Is Brexit Good for the Ibovespa? | Ask Me Anything"
+        caption: "Is Brexit Good for the Ibovespa? | Ask Me Anything",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/tpR0yFyZqIc",
         title: "CICATRIZ (Trailer) | Directed by Rodrigo Ribeiro Vieira",
-        caption: "CICATRIZ (Trailer) | Directed by Rodrigo Ribeiro Vieira"
+        caption: "CICATRIZ (Trailer) | Directed by Rodrigo Ribeiro Vieira",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/PusxWWw382o",
         title: "Between Cans and Struggles: The female graffiti scene in São Paulo",
-        caption: "Between Cans and Struggles: The female graffiti scene in São Paulo"
+        caption: "Between Cans and Struggles: The female graffiti scene in São Paulo",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/fAM_2hlcO-A",
         title: "Self-Care | Mina Bem-estar",
-        caption: "Self-Care | Mina Bem-estar"
+        caption: "Self-Care | Mina Bem-estar",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/zsWDXBB2lYE",
         title: "Zero-Alcohol Drinks | Mina Bem-estar",
-        caption: "Zero-Alcohol Drinks | Mina Bem-estar"
+        caption: "Zero-Alcohol Drinks | Mina Bem-estar",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/leE3y1SpdpM",
         title: "Skincare | Mina Bem-estar",
-        caption: "Skincare | Mina Bem-estar"
+        caption: "Skincare | Mina Bem-estar",
+        category: "categoria4"
       },
       {
         src: "https://www.youtube.com/embed/ZYDBJQrM8Q0",
         title: "Bliss Bullet | Mina Bem-estar",
-        caption: "Bliss Bullet | Mina Bem-estar"
+        caption: "Bliss Bullet | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/4PijXKmWy80",
         title: "Inside Out | Mina Bem-estar",
-        caption: "Inside Out | Mina Bem-estar"
+        caption: "Inside Out | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/VLN2x25Goz8",
         title: "Night Glow | Mina Bem-estar",
-        caption: "Night Glow | Mina Bem-estar"
+        caption: "Night Glow | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/PQs9hbw-Vwk",
         title: "Rafa Kalimann | Mina Bem-estar",
-        caption: "Rafa Kalimann | Mina Bem-estar"
+        caption: "Rafa Kalimann | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/x0rpdiwe9Iw",
         title: "S.O.S. PMS | Mina Bem-estar",
-        caption: "S.O.S. PMS | Mina Bem-estar"
+        caption: "S.O.S. PMS | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/XrYxmmzDDmU",
         title: "Workplace Beauty Pressure | Mina Bem-estar",
-        caption: "Workplace Beauty Pressure | Mina Bem-estar"
+        caption: "Workplace Beauty Pressure | Mina Bem-estar",
+        category: "categoria5"
       },
       {
         src: "https://www.youtube.com/embed/hCGz6Bf_gIs",
         title: "Mina Friday | Mina Bem-estar",
-        caption: "Mina Friday | Mina Bem-estar"
-      },
+        caption: "Mina Friday | Mina Bem-estar",
+        category: "category6"
+      }
     ],
 
     backButtonText: "Back",
@@ -409,8 +444,8 @@ export default {
   },
 
   videoModal: {
-    ariaCloseButton: "Close full-screen video",
-    fallbackTitle: "Featured video",
-    dialogTitle: "Video in full screen",
-  }
+    dialogTitle: "Video playback",
+    ariaCloseButton: "Close modal",
+    fallbackTitle: "Video"
+  },
 };

@@ -17,7 +17,9 @@ export default function VideoModal({
     if (isOpen) {
       previousFocusRef.current = document.activeElement;
 
-      modalRef.current?.focus();
+      setTimeout(() => {
+        modalRef.current?.focus();
+      }, 10);
 
       document.body.style.overflow = "hidden";
     }
@@ -80,13 +82,13 @@ export default function VideoModal({
         onKeyDown={trapFocus}
       >
         <h2 id="video-modal-title" className={styles.visuallyHidden}>
-          {dictionary.videoModal.dialogTitle}
+          {dictionary?.videoModal?.dialogTitle || "Vídeo"}
         </h2>
 
         <button
           className={styles.closeButton}
           onClick={onClose}
-          aria-label={dictionary.videoModal.ariaCloseButton}
+          aria-label={dictionary?.videoModal?.ariaCloseButton || "Close"}
         >
           ✕
         </button>
@@ -94,8 +96,9 @@ export default function VideoModal({
         <div className={styles.videoWrapper}>
           <iframe
             src={videoSrc}
-            title={videoTitle || dictionary.videoModal.fallbackTitle}
+            title={videoTitle || dictionary?.videoModal?.fallbackTitle || "Vídeo"}
             allowFullScreen
+            loading="lazy"
             frameBorder="0"
           />
         </div>

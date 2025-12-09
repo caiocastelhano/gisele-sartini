@@ -4,7 +4,7 @@ import { spaceGrotesk } from "../fonts";
 
 export default function PTLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="pt">
+    <html lang="pt" dir="ltr">
       <body className={`${spaceGrotesk.className} antialiased`}>
         {children}
       </body>
