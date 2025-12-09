@@ -7,7 +7,7 @@ import pt from "../../dictionaries/pt";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import ProjectsGrid from "../../components/ProjectsGrid/ProjectsGrid";
+import PortfolioGrid from "../../components/PortfolioGrid/PortfolioGrid";
 import FloatingContactMenu from "../../components/FloatingContactMenu/FloatingContactMenu";
 
 export const metadata = {
@@ -44,7 +44,7 @@ export const metadata = {
   },
 };
 
-export default function ProjectsPage() {
+export default function PortfolioPage() {
   const dictionary = pt;
   const { projectsPage } = dictionary;
 
@@ -70,11 +70,7 @@ export default function ProjectsPage() {
         </section>
 
         <div className={styles.pageContainer}>
-          <ProjectsGrid
-            items={projectsPage.items}
-            textCard={projectsPage.textCard}
-            dictionary={dictionary}
-          />
+          <PortfolioGrid items={projectsPage.items} />
 
           <div className={styles.buttonWrapper}>
             <Link

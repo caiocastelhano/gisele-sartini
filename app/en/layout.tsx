@@ -4,7 +4,7 @@ import { spaceGrotesk } from "../fonts";
 
 export default function ENLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <body className={`${spaceGrotesk.className} antialiased`}>
         {children}
       </body>
