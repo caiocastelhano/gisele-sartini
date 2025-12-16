@@ -34,7 +34,7 @@ export default function Tools({ dictionary }) {
           </span>
         </div>
 
-        {secondRow.map((tool) => (
+        {firstRow.map((tool) => (
           <div key={tool.label} role="listitem" className={styles.toolCard}>
             
             <div className={styles.logoWrapper}>
@@ -51,7 +51,7 @@ export default function Tools({ dictionary }) {
           </div>
         ))}
 
-        {firstRow.map((tool) => (
+        {secondRow.map((tool) => (
           <div key={tool.label} role="listitem" className={styles.toolCard}>
             
             <div className={styles.logoWrapper}>
