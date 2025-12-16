@@ -46,21 +46,21 @@ export default {
 
   tools: {
     title: "Tools",
-    ariaLabel: "TSoftware and creative tools Gisele works with",
+    ariaLabel: "Software and creative tools Gisele works with",
     helperText: "Tools I master",
 
     list: [
       { src: "/logos/premiere.svg", alt: "Adobe Premiere", label: "Premiere" },
-      { src: "/logos/photoshop.svg", alt: "Adobe Photoshop", label: "Photoshop" },
       { src: "/logos/after.svg", alt: "Adobe After Effects", label: "After Effects" },
-      { src: "/logos/animate.svg", alt: "Adobe Animate", label: "Animate" },
-      { src: "/logos/illustrator.svg", alt: "Adobe Illustrator", label: "Illustrator" },
+      { src: "/logos/photoshop.svg", alt: "Adobe Photoshop", label: "Photoshop" },
       { src: "/logos/audition.svg", alt: "Adobe Audition", label: "Audition" },
-      { src: "/logos/capcut.svg", alt: "CapCut", label: "CapCut" },
-      { src: "/logos/avid.svg", alt: "Avid", label: "Avid" },
+      { src: "/logos/illustrator.svg", alt: "Adobe Illustrator", label: "Illustrator" },
+      { src: "/logos/animate.svg", alt: "Adobe Animate", label: "Animate" },
       { src: "/logos/vmix.svg", alt: "vMix", label: "vMix" },
       { src: "/logos/streamyard.svg", alt: "StreamYard", label: "StreamYard" },
-      { src: "/logos/midjourney.svg", alt: "Midjourney", label: "Midjourney" }
+      { src: "/logos/midjourney.svg", alt: "Midjourney", label: "Midjourney" },
+      { src: "/logos/avid.svg", alt: "Avid", label: "Avid" },
+      { src: "/logos/capcut.svg", alt: "CapCut", label: "CapCut" }
     ]
   },
 
