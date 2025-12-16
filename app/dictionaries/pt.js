@@ -130,8 +130,8 @@ export default {
     description: "Empresas com as quais já colaborei",
     items: [
       {
-        image: "/clients/casper.png",
-        alt: "Logotipo Faculdade Cásper Líbero"
+        image: "/clients/gazeta.png",
+        alt: "Logotipo Gazeta"
       },
       {
         image: "/clients/empiricus.png",
@@ -142,36 +142,36 @@ export default {
         alt: "Logotipo Exame"
       },
       {
-        image: "/clients/gazeta.png",
-        alt: "Logotipo Gazeta"
-      },
-      {
         image: "/clients/mina.png",
         alt: "Logotipo Mina"
-      },
-      {
-        image: "/clients/moneytimes.png",
-        alt: "Logotipo MoneyTimes"
       },
       {
         image: "/clients/saosilvestre.png",
         alt: "Logotipo São Silvestre"
       },
       {
+        image: "/clients/casper.png",
+        alt: "Logotipo Faculdade Cásper Líbero"
+      },
+      {
+        image: "/clients/moneytimes.png",
+        alt: "Logotipo MoneyTimes"
+      },
+      {
         image: "/clients/seudinheiro.png",
         alt: "Logotipo Seu Dinheiro"
       },
       {
-        image: "/clients/yubb.png",
-        alt: "Logotipo Yubb"
+        image: "/clients/cea.png",
+        alt: "Logotipo C&A"
       },
       {
         image: "/clients/zazo.png",
         alt: "Logotipo ZAZO Produções"
       },
       {
-        image: "/clients/cea.png",
-        alt: "Logotipo C&A"
+        image: "/clients/yubb.png",
+        alt: "Logotipo Yubb"
       },
     ]
   },
