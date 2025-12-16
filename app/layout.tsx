@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import "./globals.css";
-import { spaceGrotesk } from "./fonts";
+import { josefin } from "./fonts";
 
 export const metadata = {
   icons: {
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt" dir="ltr">
-      <body className={spaceGrotesk.className}>
+      <body className={josefin.className}>
         {children}
       </body>
     </html>
