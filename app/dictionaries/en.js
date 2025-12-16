@@ -130,8 +130,8 @@ export default {
     description: "Companies I’ve collaborated with",
     items: [
       {
-        image: "/clients/casper.png",
-        alt: "Cásper Líbero College logo"
+        image: "/clients/gazeta.png",
+        alt: "Gazeta logo"
       },
       {
         image: "/clients/empiricus.png",
@@ -142,36 +142,36 @@ export default {
         alt: "Exame logo"
       },
       {
-        image: "/clients/gazeta.png",
-        alt: "Gazeta logo"
-      },
-      {
         image: "/clients/mina.png",
         alt: "Mina logo"
-      },
-      {
-        image: "/clients/moneytimes.png",
-        alt: "MoneyTimes logo"
       },
       {
         image: "/clients/saosilvestre.png",
         alt: "São Silvestre race logo"
       },
       {
+        image: "/clients/casper.png",
+        alt: "Cásper Líbero College logo"
+      },
+      {
+        image: "/clients/moneytimes.png",
+        alt: "MoneyTimes logo"
+      },
+      {
         image: "/clients/seudinheiro.png",
         alt: "Seu Dinheiro logo"
       },
       {
-        image: "/clients/yubb.png",
-        alt: "Yubb logo"
+        image: "/clients/cea.png",
+        alt: "C&A logo"
       },
       {
         image: "/clients/zazo.png",
         alt: "ZAZO Produções logo"
       },
       {
-        image: "/clients/cea.png",
-        alt: "C&A logo"
+        image: "/clients/yubb.png",
+        alt: "Yubb logo"
       },
     ]
   },
