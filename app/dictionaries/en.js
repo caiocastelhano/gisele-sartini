@@ -432,7 +432,31 @@ export default {
         title: "Mina Friday | Mina Bem-estar",
         caption: "Mina Friday | Mina Bem-estar",
         category: "Promotional"
-      }
+      },
+      {
+        src: "https://www.youtube.com/embed/HBATj3MglgE",
+        title: "Evolution (2021)",
+        caption: "Evolution (2021)",
+        category: "Personal Projects"
+      },
+      {
+        src: "https://www.youtube.com/embed/smtge8EM5Yc",
+        title: "LIVE | 2025 Copa Paulista Final | Primavera vs XV de Piracicaba | TV Gazeta - Oct 5, 2025",
+        caption: "LIVE | 2025 Copa Paulista Final | Primavera vs XV de Piracicaba | TV Gazeta - Oct 5, 2025",
+        category: "Livestream"
+      },
+      {
+        src: "https://www.youtube.com/embed/Q3pDercVU64",
+        title: "Alex Müller LIVE + latest news on Palmeiras, Corinthians and Brazilian football | #TáNoJogo (Oct 14) #5",
+        caption: "Alex Müller LIVE + latest news on Palmeiras, Corinthians and Brazilian football | #TáNoJogo (Oct 14) #5",
+        category: "Livestream"
+      },
+      {
+        src: "https://www.youtube.com/embed/ijnbEgeK9fg",
+        title: "Corinthians 1-1 Palmeiras + Timão Anniversary + Chico Lang LIVE! | #TáNoJogo #89",
+        caption: "Corinthians 1-1 Palmeiras + Timão Anniversary + Chico Lang LIVE! | #TáNoJogo #89",
+        category: "Livestream"
+      },
     ],
 
     backButtonText: "Back",
