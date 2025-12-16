@@ -69,12 +69,14 @@ export default function CategorySection({ categoryName, videos, onVideoClick }) 
                 tabIndex={0}
                 onKeyDown={(e) => e.key === "Enter" && onVideoClick(video)}
               >
-                <iframe
-                  src={video.src}
-                  title={video.title}
-                  allowFullScreen
-                  className={styles.iframe}
-                />
+                <div className={styles.videoWrapper}>
+                  <iframe
+                    src={video.src}
+                    title={video.title}
+                    allowFullScreen
+                    className={styles.iframe}
+                  />
+                </div>
                 <p className={styles.caption}>{video.caption}</p>
               </div>
             ))}
