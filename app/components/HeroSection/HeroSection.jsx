@@ -18,14 +18,13 @@ export default function HeroSection({ dictionary }) {
         tabIndex="-1"
         role="presentation"
         className={styles.video}
-        src="/videos/videoprovisorio.mp4"
-        poster="/images/fotoprovisoria.jpg"
+        src={hero.videoSrc}
+        poster={hero.poster}
         preload="metadata"
         autoPlay
         loop
         muted
         playsInline
-        webkit-playsinline="true"
         disablePictureInPicture
         controls={false}
         crossOrigin="anonymous"

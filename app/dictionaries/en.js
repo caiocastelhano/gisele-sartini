@@ -211,7 +211,9 @@ export default {
   },
 
   hero: {
-    sectionLabel: "Presentation video"
+    sectionLabel: "Introduction",
+    videoSrc: "/videos/videoprovisorio.mp4",
+    poster: "/images/fotoprovisoria.jpg",
   },
 
   projectsPage: {
