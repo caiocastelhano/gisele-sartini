@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./CategorySection.module.css";
 
-export default function CategorySection({ categoryName, videos, onVideoClick }) {
+export default function CategorySection({ categoryName, videos, onVideoClick, dictionary }) {
   const [isDesktop, setIsDesktop] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const trackRef = useRef(null);
@@ -49,7 +49,9 @@ export default function CategorySection({ categoryName, videos, onVideoClick }) 
               e.stopPropagation(); 
               prev();
             }}
-            aria-label="Previous videos"
+            aria-label={
+              dictionary?.portfolio?.ariaLabels?.previousVideos || "Previous videos"
+            }
           >
             ←
           </button>
@@ -57,17 +59,14 @@ export default function CategorySection({ categoryName, videos, onVideoClick }) 
 
         <div
           className={styles.carouselViewport}
-          aria-hidden={!isDesktop ? "true" : "false"}
         >
           <div className={styles.carouselTrack} ref={trackRef}>
             {videos.map((video, index) => (
-              <div
+              <button
                 key={index}
+                type="button"
                 className={styles.card}
                 onClick={() => onVideoClick(video)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => e.key === "Enter" && onVideoClick(video)}
               >
                 <div className={styles.videoWrapper}>
                   <iframe
@@ -78,7 +77,7 @@ export default function CategorySection({ categoryName, videos, onVideoClick }) 
                   />
                 </div>
                 <p className={styles.caption}>{video.caption}</p>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -90,7 +89,9 @@ export default function CategorySection({ categoryName, videos, onVideoClick }) 
               e.stopPropagation();
               next();
             }}
-            aria-label="Next videos"
+            aria-label={
+              dictionary?.portfolio?.ariaLabels?.nextVideos || "Next videos"
+            }
           >
             →
           </button>

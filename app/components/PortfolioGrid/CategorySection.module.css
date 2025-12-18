@@ -26,9 +26,16 @@
 }
 
 .card {
+  all: unset;
   box-sizing: border-box;
   padding: 0 12px;
   cursor: pointer;
+  display: block;
+}
+
+.card:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
 }
 
 .videoWrapper {

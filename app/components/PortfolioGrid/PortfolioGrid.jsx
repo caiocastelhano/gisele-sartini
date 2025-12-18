@@ -24,16 +24,17 @@ export default function PortfolioGrid({ items, dictionary }) {
 
   return (
     <>
-      <div className={styles.wrapper}>
+      <section className={styles.wrapper}>
         {Object.entries(categories).map(([categoryName, videos]) => (
           <CategorySection
             key={categoryName}
             categoryName={categoryName}
             videos={videos}
             onVideoClick={openModal}
+            dictionary={dictionary}
           />
         ))}
-      </div>
+      </section>
 
       <VideoModal
         isOpen={isModalOpen}
