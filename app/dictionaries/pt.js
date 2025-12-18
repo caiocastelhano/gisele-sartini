@@ -212,7 +212,10 @@ export default {
 
   hero: {
     sectionLabel: "Apresentação",
-    videoSrc: "/videos/videoprovisorio.mp4",
+    video: {
+      webm: "/videos/demo-reel-pt.webm",
+      mp4: "/videos/demo-reel-pt.mp4",
+    },
     poster: "/images/fotoprovisoria.jpg",
   },
 
