@@ -5,10 +5,14 @@ export const metadata = {
   title: "Gisele Sartini | Video Editing & Motion Design",
   description:
     "Official portfolio of Gisele Sartini — video editing, motion design, reels, and audiovisual productions.",
+
   alternates: {
     canonical: "/en",
   },
+
   openGraph: {
+    type: "website",
+    locale: "en_US",
     title: "Gisele Sartini | Video Editing & Motion Design",
     description:
       "Official portfolio of Gisele Sartini — video editing, motion design, reels, and audiovisual productions.",
@@ -22,6 +26,7 @@ export const metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Gisele Sartini | Video Editing & Motion Design",

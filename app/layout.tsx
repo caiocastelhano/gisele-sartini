@@ -1,29 +1,28 @@
 import { ReactNode } from "react";
+import type { Metadata } from "next";
 import "./globals.css";
 import { josefin } from "./fonts";
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.giselesartini.com"),
+
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
-    ]
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 
   manifest: "/site.webmanifest",
-  themeColor: "#E55347"
+  themeColor: "#E55347",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt" dir="ltr">
-      <body className={josefin.className}>
-        {children}
-      </body>
+      <body className={josefin.className}>{children}</body>
     </html>
   );
 }
