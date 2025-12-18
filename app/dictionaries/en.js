@@ -459,6 +459,36 @@ export default {
         caption: "Corinthians 1-1 Palmeiras + Timão Anniversary + Chico Lang LIVE! | #TáNoJogo #89",
         category: "Livestream"
       },
+      {
+        src: "https://www.youtube.com/embed/IuYcEhI1apg",
+        title: "Idol, Gratitude or Traitor?",
+        caption: "Idol, Gratitude or Traitor?",
+        category: "Social Media"
+      },
+      {
+        src: "https://www.youtube.com/embed/rY6XXa1XkO8",
+        title: "Who Is Better?",
+        caption: "Who Is Better?",
+        category: "Social Media"
+      },
+      {
+        src: "https://www.youtube.com/embed/H59EOIEm7pg",
+        title: "Lentil Salad",
+        caption: "Lentil Salad",
+        category: "Social Media"
+      },
+      {
+        src: "https://www.youtube.com/embed/u8Ei4SM4mh0",
+        title: "Texas Sports Academy",
+        caption: "Texas Sports Academy",
+        category: "Social Media"
+      },
+      {
+        src: "https://www.youtube.com/embed/g59dFQKKi6w",
+        title: "Michelle Look",
+        caption: "Michelle Look",
+        category: "Social Media"
+      },
     ],
 
     backButtonText: "Back",
