@@ -217,6 +217,10 @@ export default {
       mp4: "/videos/demo-reel-en.mp4",
     },
     poster: "/images/fotoprovisoria.jpg",
+    ariaLabels: {
+      soundOn: "Turn video sound on",
+      soundOff: "Turn video sound off",
+    },
   },
 
   projectsPage: {

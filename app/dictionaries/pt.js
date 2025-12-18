@@ -217,6 +217,10 @@ export default {
       mp4: "/videos/demo-reel-pt.mp4",
     },
     poster: "/images/fotoprovisoria.jpg",
+    ariaLabels: {
+      soundOn: "Ativar som do vídeo",
+      soundOff: "Desativar som do vídeo",
+    },
   },
 
   projectsPage: {
