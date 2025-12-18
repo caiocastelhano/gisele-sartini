@@ -18,7 +18,6 @@ export default function HeroSection({ dictionary }) {
         tabIndex="-1"
         role="presentation"
         className={styles.video}
-        src={hero.videoSrc}
         poster={hero.poster}
         preload="metadata"
         autoPlay
@@ -28,7 +27,10 @@ export default function HeroSection({ dictionary }) {
         disablePictureInPicture
         controls={false}
         crossOrigin="anonymous"
-      ></video>
+      >
+        <source src={hero.video.webm} type="video/webm" />
+        <source src={hero.video.mp4} type="video/mp4" />
+      </video>
     </section>
   );
 }
