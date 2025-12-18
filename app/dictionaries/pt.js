@@ -218,6 +218,8 @@ export default {
     },
     poster: "/images/poster.jpg",
     ariaLabels: {
+      playVideo: "Reproduzir vídeo",
+      pauseVideo: "Pausar vídeo",
       soundOn: "Ativar som do vídeo",
       soundOff: "Desativar som do vídeo",
     },
