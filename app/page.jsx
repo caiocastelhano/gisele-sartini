@@ -45,5 +45,9 @@ export default async function Page() {
 
   const dictionary = lang === "en" ? en : pt;
 
-  return <HomeContent dictionary={dictionary} lang={lang} />;
+  return (
+    <main id="main-content">
+      <HomeContent dictionary={dictionary} lang={lang} />
+    </main>
+  );
 }
