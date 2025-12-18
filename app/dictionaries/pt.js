@@ -216,7 +216,7 @@ export default {
       webm: "/videos/demo-reel-pt.webm",
       mp4: "/videos/demo-reel-pt.mp4",
     },
-    poster: "/images/fotoprovisoria.jpg",
+    poster: "/images/poster.jpg",
     ariaLabels: {
       soundOn: "Ativar som do vídeo",
       soundOff: "Desativar som do vídeo",
