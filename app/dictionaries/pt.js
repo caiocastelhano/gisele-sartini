@@ -458,6 +458,36 @@ export default {
         caption: "Corinthians 1 x 1 Palmeiras + ANIVERSÁRIO do Timão + Chico Lang AO VIVO! | #TáNoJogo #89",
         category: "Livestream"
       },
+      {
+        src: "https://www.youtube.com/embed/IuYcEhI1apg",
+        title: "Ídolo, gratidão ou traíra?",
+        caption: "Ídolo, gratidão ou traíra?",
+        category: "Redes sociais"
+      },
+      {
+        src: "https://www.youtube.com/embed/rY6XXa1XkO8",
+        title: "Quem é melhor?",
+        caption: "Quem é melhor?",
+        category: "Redes sociais"
+      },
+      {
+        src: "https://www.youtube.com/embed/H59EOIEm7pg",
+        title: "Salada de lentilha",
+        caption: "Salada de lentilha",
+        category: "Redes sociais"
+      },
+      {
+        src: "https://www.youtube.com/embed/u8Ei4SM4mh0",
+        title: "Texas Sports Academy",
+        caption: "Texas Sports Academy",
+        category: "Redes sociais"
+      },
+      {
+        src: "https://www.youtube.com/embed/g59dFQKKi6w",
+        title: "Look Michelle",
+        caption: "Look Michelle",
+        category: "Redes sociais"
+      },
     ],
 
     backButtonText: "Voltar",
