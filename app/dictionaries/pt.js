@@ -510,4 +510,11 @@ export default {
     ariaCloseButton: "Fechar modal",
     fallbackTitle: "Vídeo"
   },
+
+  portfolio: {
+    ariaLabels: {
+      previousVideos: "Vídeos anteriores",
+      nextVideos: "Próximos vídeos",
+    },
+  },
 };
