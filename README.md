@@ -4,7 +4,7 @@ This is the source code for the official portfolio website of Gisele Sartini —
 
 ## 🔍 Visit
 
-🌐 [gisele-sartini.vercel.app](https://www.giselesartini.com/)
+🌐 [giselesartini.com](https://www.giselesartini.com/)
 
 ## 🧭 Structure
 
@@ -46,8 +46,7 @@ The entire interface is designed to offer an excellent experience across all scr
 
 ## ✅ Status
 
-The website is currently **under active development**.
-You can preview the live version here: gisele-sartini.vercel.app
+The website is currently **active**.
 
 ## 👨‍💻 Developer
 
